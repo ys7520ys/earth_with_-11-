@@ -8,8 +8,20 @@
 
 @media (max-width: 1299px) {
   header{
-    background-color: red;
+    height: 50px;
+    line-height: 50px;
   }  
+  header .logo{
+    margin-left: 20px;
+  }
+  header .menuBtn{
+    margin-right: 20px;
+    height: 80%;
+    width: 50px;
+  }
+  header ul{
+    display: none;
+  }
   .mySwiper{
     display: none;
   }
