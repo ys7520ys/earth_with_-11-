@@ -152,7 +152,8 @@
 
 
   section.secondSection{
-    max-width: 350px;
+    width: 100%;
+    padding: 0px 20px;
   }
   section.secondSection .text_box{
     padding: 0px;
@@ -203,9 +204,41 @@
     display: none;
   }
 
-
-
-
+  .secondSection .parent_box{
+    position: relative;
+  }
+  .secondSection .parent_box .speech_bubble_mobile{
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    z-index: 200;
+    width: 80px;
+    height: auto;
+  }
+  section.secondSection .speech_bubble_mobile .top_box{
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    line-height: 120%;
+  }
+  section.secondSection .speech_bubble_mobile .triangle_box{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    rotate: 45deg;
+    background-color: #3c3c3c;
+  }
 
 
 
