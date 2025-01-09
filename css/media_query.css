@@ -1,0 +1,343 @@
+/* 모바일 스타일일 */
+@media (max-width: 1299px) {
+  header{
+    background-color: red;
+  }  
+  .mySwiper{
+    display: none;
+  }
+  section.firstSection{
+    position: relative;
+    max-width: 350px;
+  }
+  section.firstSection .section-title{
+    width: 300px;
+    font-size: 38px;
+    text-align: left;
+    line-height: 120%;
+    margin-bottom: 7px;
+  }
+  section.firstSection .section-subtitle{
+    text-align: left;
+    width: 250px;
+    line-height: 120%;
+    font-size: 18px;
+  }
+  section.firstSection .parent_box{
+    display: none;
+  }
+
+  .firstSection{
+  }
+  .firstSection .text_box h2.card-title{
+    font-size: 32px;
+  }
+  .firstSection .text_box p.card-subtitle{
+    font-size: 16px;
+    width: 285px;
+  }
+  .firstSection .text_box a{
+    display: none;
+  }
+
+  .firstSection_mobile{
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .firstSection_mobile .swiper_mobile{
+  }
+  .firstSection_mobile .swiper-wrapper{
+  }
+  .firstSection_mobile .swiper-slide{
+    width: 350px;
+  }
+  .firstSection_mobile .img_box{
+    width: 100%;
+    height: 350px;
+  }
+
+  .swiper{
+
+  }
+
+  section.firstSection .speech_bubble_mobile{
+    position: absolute;
+    top: 280px;
+    right: 0px;
+    z-index: 200;
+    width: 80px;
+    height: auto;
+  }
+  section.firstSection .speech_bubble_mobile .top_box{
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    line-height: 120%;
+  }
+  section.firstSection .speech_bubble_mobile .triangle_box{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    rotate: 45deg;
+    background-color: #3c3c3c;
+  }
+  .firstSection_mobile .swiper-pagination{
+    position: absolute;
+    top: 750px;
+  }
+  .firstSection_mobile .swiper-pagination-bullet {
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+  }
+  .firstSection_mobile .swiper-pagination-bullet-active {
+    background-color: #3c3c3c;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media (min-width: 1300px) {
+  header ul{
+    width: 43vw;
+  }
+  .firstSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  .firstSection .parent_box{
+    width: 100%;
+    height: 33vw;
+  }
+  .firstSection .img_box{
+    width: 49%;
+  }
+  .firstSection h2.section-title{
+    font-size: 4vw;
+  }
+  .firstSection h3.section-subtitle{
+    font-size: 1.8vw;
+  }
+  .firstSection .text_box h2.card-title{
+    font-size: 2.6vw;
+  }
+  .firstSection .text_box{
+    height: 18vw;
+  }
+  .firstSection .text_box p.card-subtitle{
+    font-size: 1.4vw;
+    width: 40vw;
+  }
+
+
+
+
+
+
+
+
+  section.secondSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  .secondSection .parent_box{
+    width: 100%;
+    height: 39vw;
+  }
+
+
+  .secondSection .img_box{
+  }
+  .secondSection .text_box h2.section-title{
+    font-size: 4.5vw;
+    margin-bottom: 1.2vw;
+  }
+  .secondSection .text_box h3.section-subtitle{
+    font-size: 1.6vw;
+  }
+  .secondSection .text_box ul{
+    font-size: 1.4vw;
+    margin-top: 4vw;
+  };
+  .secondSection .img_box{
+    gap: 1vw;
+    margin-left: 1vw;
+  }
+
+
+
+
+
+
+  section.thirdSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  .thirdSection .card_box .deco_{
+    height: 38vw;
+  }
+  .thirdSection h2.section-title{
+    font-size: 4.5vw;
+    margin-bottom: 1.5vw;
+  }
+  .thirdSection h3.section-subtitle{
+    font-size: 1.6vw;
+    margin-bottom: 8vw;
+  }
+  .thirdSection .text_box{
+    padding: 1.7vw 1.5vw;
+  }
+  .thirdSection .text_box h2.card-title{
+    font-size: 1.7vw;
+    margin-bottom: 1vw;
+  }
+  .thirdSection .text_box p.card-subtitle{
+    font-size: 1.3vw;
+    margin-bottom: 4.1vw;
+  }
+  .thirdSection .text_box a{
+    padding: 1vw 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  section.fourthSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  section.fourthSection h2.section-title{
+    font-size: 4.5vw;
+    margin-bottom: 1.3vw;
+    color: #333;
+  }
+  section.fourthSection h3.section-subtitle{
+    font-size: 1.6vw;
+  }
+  section.fourthSection .card_box{
+    margin-top: 2vw;
+  }
+  .fourthSection .card_box .card{
+    padding: 2vw 0px 0px 2vw;
+    height: 23vw;
+    width: 30vw;
+  }
+
+
+
+  .card_box .card .img_box{
+    width: 2.5vw;
+    margin-bottom: 1.2vw;
+  }
+  .card_box .card .text_box{
+    position: relative;
+    margin-bottom: 1vw;
+    width: 25vw;
+    height: 230px;
+  }
+  .card_box .card .text_box h2.card-title{
+    font-size: 1.5vw;
+    margin-bottom: 1.2vw;
+  }
+  .card_box .card .text_box p.card-subtitle{
+    font-size: 1.2vw;
+  }
+  .card_box .card .text_box a{
+    top: 13vw;
+  }
+
+
+
+
+
+  section.bannerSection{
+    position: relative;
+    width: 100%;
+    height: 29vw;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  section.bannerSection img{
+    height: 100%;   
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+
+
+
+
+
+
+
+  /* footer start*/
+  footer > div{
+    width: 100%;
+    padding: 50px;
+  }
+  /* footer end */
+} 
+
+
+
+
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+
+
+
+
+
+
+
+
+
+/* 0px에서 1000px까지 스타일 구성성 */
