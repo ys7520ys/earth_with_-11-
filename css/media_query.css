@@ -1,4 +1,11 @@
 /* 모바일 스타일일 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (max-width: 1299px) {
   header{
     background-color: red;
@@ -9,6 +16,10 @@
   section.firstSection{
     position: relative;
     max-width: 350px;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
   }
   section.firstSection .section-title{
     width: 300px;
@@ -28,6 +39,7 @@
   }
 
   .firstSection{
+    
   }
   .firstSection .text_box h2.card-title{
     font-size: 32px;
@@ -42,14 +54,18 @@
 
   .firstSection_mobile{
     margin-top: 30px;
-    overflow: hidden;
+    position: relative;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
   }
   .firstSection_mobile .swiper_mobile{
+    overflow: hidden;
   }
   .firstSection_mobile .swiper-wrapper{
   }
   .firstSection_mobile .swiper-slide{
-    width: 350px;
   }
   .firstSection_mobile .img_box{
     width: 100%;
@@ -61,8 +77,12 @@
   }
 
   section.firstSection .speech_bubble_mobile{
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
     position: absolute;
-    top: 280px;
+    top: -100px;
     right: 0px;
     z-index: 200;
     width: 80px;
@@ -90,7 +110,7 @@
   }
   .firstSection_mobile .swiper-pagination{
     position: absolute;
-    top: 750px;
+    top: 370px;
   }
   .firstSection_mobile .swiper-pagination-bullet {
     background-color: #000000;
@@ -103,6 +123,72 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  section.secondSection{
+    max-width: 350px;
+  }
+  section.secondSection .text_box{
+    padding: 0px;
+    width: 100%;
+  }
+  .text_box h2.section-title{
+    font-size: 38px;
+    width: 260px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+  }
+
+  .text_box h3.section-subtitle{
+    font-size: 18px;
+    width: 220px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+  }
+
+  section.secondSection .parent_box .img_box{
+    display: none;
+  }
+  section.secondSection .parent_box .text_box ul{
+    margin-top: 20px;
+    /* display: none; */
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  .secondSection .text_box ul li:hover{
+    background-color: #3c3c3c;
+    color: white;
+  }
+  .secondSection .text_box ul li{
+    transition: 0.3s;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: #EDEDED;
+  }
+
+  .secondSection .text_box ul li::before{
+    display: none;
+  }
 
 
 
