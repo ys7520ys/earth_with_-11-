@@ -16,7 +16,7 @@ var swiper1 = new Swiper(".mySwiper", {
 });
 
 var swiper2 = new Swiper(".swiper_mobile", {
-  speed: 100,
+  speed: 600,
   pagination: {
     el: ".swiper_mobile .swiper-pagination",
   }

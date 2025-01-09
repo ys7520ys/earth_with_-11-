@@ -410,7 +410,7 @@ section.thirdSection{
   gap: 20px;
   justify-content: space-between;
 }
-.thirdSection .card_box .deco_{
+.deco_{
   background-color: #fff;
   height: 550px;
   width: 33%;
@@ -418,14 +418,14 @@ section.thirdSection{
   transition: scale 0.4s, filter 0.4s, outline 0.4s;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
 }
-.thirdSection .card_box .deco_ .img_box{
+.deco_ .img_box{
   height: 50%;
   width: 100%;
   border-radius: 7px 7px 0px 0px;
   overflow: hidden;
   transition: outline 0.4s ease;
 }
-.thirdSection .card_box .deco_ .img_box img{
+.deco_ .img_box img{
   height: 100%;
   width: 100%;
   object-fit: cover;

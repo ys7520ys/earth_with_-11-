@@ -69,13 +69,14 @@
     overflow: hidden;
   }
   .firstSection_mobile .swiper-wrapper{
+
   }
   .firstSection_mobile .swiper-slide{
-    margin-right: 20px;
   }
   .firstSection_mobile .img_box{
     width: 100%;
     height: 350px;
+    box-shadow: none;
   }
 
   .swiper{
@@ -223,6 +224,103 @@
 
 
 
+
+
+
+
+
+
+
+
+  section.thirdSection{
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .thirdSection h2.section-title{
+    text-align: left;
+    font-size: 38px;
+    width: 260px;
+  }
+
+  .thirdSection h3.section-subtitle{
+    text-align: left;
+    font-size: 18px;
+    width: 220px;
+    margin-bottom: 30px;
+  }
+  .thirdSection .card_box{
+    display: none;
+  }
+
+  .thirdSection_mobile .swiper_mobile{
+    overflow: hidden;
+  }
+  .thirdSection .swiper-wrapper{
+    width: 500px;
+  }
+  .thirdSection .swiper-slide{
+    width: 500px;
+  }
+  .thirdSection .deco_{
+    width: 100%;
+    height: 400px;
+    box-shadow: none;
+    border: solid 1px black;
+  }
+  .thirdSection .text_box a{
+    display: none;
+  }
+  .thirdSection_mobile{
+    position: relative;
+  }
+
+  
+  .thirdSection .speech_bubble_mobile{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    z-index: 200;
+    width: 80px;
+    height: auto;
+  }
+  .thirdSection .speech_bubble_mobile .top_box{
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    line-height: 120%;
+  }
+  .thirdSection .speech_bubble_mobile .triangle_box{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    rotate: 45deg;
+    background-color: #3c3c3c;
+  }
+
+
+  .bannerSection{
+    width: 100%;
+  }
+  .bannerSection img{
+    width: 100%;
+  }
+
+  section.fourthSection{
+    display: none;
+  }
+  footer{
+    width: 100%;
+  }
+  footer div{
+    width: 100%;
+  }
 }
 @media (min-width: 1300px) {
   header ul{
