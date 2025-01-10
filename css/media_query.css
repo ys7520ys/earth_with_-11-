@@ -43,7 +43,7 @@
   section.firstSection{
     position: relative;
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px;
   }
   section.firstSection .section-title{
     padding-top: 40px;
@@ -54,12 +54,14 @@
     text-align: left;
     line-height: 120%;
     margin-bottom: 10px;
+    padding-left: 20px;
   }
   section.firstSection .section-subtitle{
     text-align: left;
     width: 230px;
     line-height: 120%;
     font-size: 16px;
+    padding-left: 20px;
   }
   section.firstSection .text_box{
     width: 100%;
@@ -91,20 +93,19 @@
     display: block;
   }
   .firstSection_mobile .swiper_mobile{
-    overflow: hidden;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
-    border-radius: 10px;
-    border: solid 2px #3c3c3c;
   }
   .firstSection_mobile .swiper-wrapper{
+    width: 100%;
     
   }
   .firstSection_mobile .swiper-slide{
+    padding: 0px 20px;
   }
   .firstSection_mobile .img_box{
     width: 100%;
     height: 300px;
     box-shadow: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3); 
   }
 
   .swiper{
@@ -114,7 +115,7 @@
   section.firstSection .speech_bubble_mobile{
     position: absolute;
     top: -90px;
-    right: 0px;
+    right: 20px;
     z-index: 200;
     width: 80px;
     height: auto;
@@ -176,6 +177,9 @@
   section.secondSection .text_box{
     padding: 0px;
     width: 100%;
+  }
+  .secondSection .text_box ul {
+    padding-left: 0px;
   }
   .text_box h2.section-title{
     padding-top: 40px;
@@ -269,7 +273,7 @@
 
   section.thirdSection{
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px;
   }
   section.thirdSection .text_box{
     padding: 20px 20px 0px 20px;
@@ -281,6 +285,7 @@
     font-size: 32px;
     width: 220px;
     margin-bottom: 10px;
+    padding-left: 20px;
   }
 
   .thirdSection h3.section-subtitle{
@@ -288,6 +293,7 @@
     font-size: 16px;
     width: 250px;
     margin-bottom: 30px;
+    padding-left: 20px;
   }
   .thirdSection .text_box h2.card-title{
     font-size: 22px;
@@ -301,16 +307,15 @@
   }
   .thirdSection_mobile{
     display: block;
+    
   }
   .thirdSection_mobile .swiper_mobile{
-    overflow: hidden;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
-    border-radius: 10px;
-    border: solid 2px #3c3c3c;
   }
   .thirdSection .swiper-wrapper{
+    
   }
   .thirdSection .swiper-slide{
+    padding: 0px 20px;
   }
   .thirdSection_mobile .swiper-pagination{
     position: absolute;
@@ -328,7 +333,7 @@
   .thirdSection .deco_{
     width: 100%;
     height: 305px;
-    box-shadow: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
   }
   .thirdSection .text_box a{
     display: none;
@@ -341,7 +346,7 @@
   .thirdSection .speech_bubble_mobile{
     position: absolute;
     top: -90px;
-    right: 0px;
+    right: 20px;
     z-index: 200;
     width: 80px;
     height: auto;
@@ -376,7 +381,7 @@
 
   section.fourthSection{  
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px;
   }
   section.fourthSection .card{
     padding: 25px 20px;
@@ -389,13 +394,15 @@
     text-align: left;
     font-size: 32px;
     letter-spacing: -1px;
-    width: 220px;
+    width: 240px;
     margin-bottom: 10px;
+    padding-left: 20px;
   }
   section.fourthSection h3.section-subtitle{
     text-align: left;
     font-size: 16px;
     margin-bottom: 30px;
+    padding-left: 20px;
   }
   .fourthSection .card .text_box{
     position: relative;
@@ -417,14 +424,10 @@
     position: relative;
   }
   .fourthSection_mobile .swiper_mobile{
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
-    border: solid 2px #3c3c3c;
   }
   .fourthSection_mobile .swiper-wrapper{}
   .fourthSection_mobile .swiper-slide{
-
+    padding: 0px 20px;
   }
   .fourthSection_mobile .swiper-pagination{
     position: absolute;
@@ -441,7 +444,7 @@
   .fourthSection_mobile .card{
     height: 290px;
     width: 100%;
-    box-shadow: none;
+    border: solid 1px black;
   }
   .fourthSection .card .text_box a{
     display: none;;
@@ -449,7 +452,7 @@
   section.fourthSection .speech_bubble_mobile{
     position: absolute;
     top: -100px;
-    right: 0px;
+    right: 20px;
     z-index: 200;
     width: 80px;
     height: auto;
