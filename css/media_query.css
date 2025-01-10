@@ -53,7 +53,7 @@
     font-size: 32px;
     text-align: left;
     line-height: 120%;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
   section.firstSection .section-subtitle{
     text-align: left;
@@ -71,13 +71,15 @@
   .firstSection{
   }
   .firstSection .text_box h2.card-title{
-    font-size: 24px;
+    font-size: 22px;
+    top: 30px;
   }
   .firstSection .text_box p.card-subtitle{
     font-size: 14px;
     width: 100%;
     padding: 0px 30px;
     left: 0px;
+    top: 65px;
   }
   .firstSection .text_box a{
     display: none;
@@ -92,6 +94,7 @@
     overflow: hidden;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;
+    border: solid 2px #3c3c3c;
   }
   .firstSection_mobile .swiper-wrapper{
     
@@ -178,7 +181,7 @@
     padding-top: 40px;
     font-size: 32px;
     width: 220px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 
   .text_box h3.section-subtitle{
@@ -277,6 +280,7 @@
     text-align: left;
     font-size: 32px;
     width: 220px;
+    margin-bottom: 10px;
   }
 
   .thirdSection h3.section-subtitle{
@@ -286,7 +290,7 @@
     margin-bottom: 30px;
   }
   .thirdSection .text_box h2.card-title{
-    font-size: 24px;
+    font-size: 22px;
   }
   .thirdSection .text_box p.card-subtitle{
     font-size: 14px;
@@ -302,6 +306,7 @@
     overflow: hidden;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;
+    border: solid 2px #3c3c3c;
   }
   .thirdSection .swiper-wrapper{
   }
@@ -322,7 +327,7 @@
 
   .thirdSection .deco_{
     width: 100%;
-    height: 300px;
+    height: 305px;
     box-shadow: none;
   }
   .thirdSection .text_box a{
@@ -385,7 +390,7 @@
     font-size: 32px;
     letter-spacing: -1px;
     width: 220px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
   section.fourthSection h3.section-subtitle{
     text-align: left;
@@ -399,7 +404,7 @@
     height: 200px;
   }
   .fourthSection .card .text_box h2.card-title{
-    font-size: 24px;
+    font-size: 22px;
   }
   .fourthSection .card .text_box p.card-subtitle{
     font-size: 14px;
@@ -415,6 +420,7 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
+    border: solid 2px #3c3c3c;
   }
   .fourthSection_mobile .swiper-wrapper{}
   .fourthSection_mobile .swiper-slide{
@@ -422,7 +428,7 @@
   }
   .fourthSection_mobile .swiper-pagination{
     position: absolute;
-    top: 285px;
+    top: 305px;
   }
   .fourthSection_mobile .swiper-pagination-bullet {
     background-color: #000000;
@@ -433,7 +439,7 @@
     background-color: #3c3c3c;
   }
   .fourthSection_mobile .card{
-    height: 270px;
+    height: 290px;
     width: 100%;
     box-shadow: none;
   }
