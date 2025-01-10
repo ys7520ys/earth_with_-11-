@@ -44,6 +44,7 @@
     position: relative;
     width: 100%;
     padding: 0px;
+    overflow: hidden;
   }
   section.firstSection .section-title{
     padding-top: 40px;
@@ -69,9 +70,6 @@
   section.firstSection .parent_box{
     display: none;
   }
-
-  .firstSection{
-  }
   .firstSection .text_box h2.card-title{
     font-size: 22px;
     top: 30px;
@@ -93,7 +91,6 @@
     display: block;
   }
   .firstSection_mobile .swiper_mobile{
-    overflow: hidden;
   }
   .firstSection_mobile .swiper-wrapper{
     width: 100%;
@@ -174,6 +171,7 @@
   section.secondSection{
     width: 100%;
     padding: 0px 20px;
+    overflow: hidden;
   }
   section.secondSection .text_box{
     padding: 0px;
@@ -275,6 +273,7 @@
   section.thirdSection{
     width: 100%;
     padding: 0px;
+    overflow: hidden;
   }
   section.thirdSection .text_box{
     padding: 20px 20px 0px 20px;
@@ -311,7 +310,6 @@
     
   }
   .thirdSection_mobile .swiper_mobile{
-    overflow: hidden;
   }
   .thirdSection .swiper-wrapper{
     
@@ -384,6 +382,7 @@
   section.fourthSection{  
     width: 100%;
     padding: 0px;
+    overflow: hidden;
   }
   section.fourthSection .card{
     padding: 25px 20px;
@@ -426,7 +425,6 @@
     position: relative;
   }
   .fourthSection_mobile .swiper_mobile{
-    overflow: hidden;
   }
   .fourthSection_mobile .swiper-wrapper{}
   .fourthSection_mobile .swiper-slide{
