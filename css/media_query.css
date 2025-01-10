@@ -1,5 +1,5 @@
 
-@media (max-width: 1299px) {
+@media (min-width: 320px) and (max-width: 767px) {
   header{
     height: 50px;
     line-height: 50px;
@@ -64,6 +64,7 @@
   .firstSection_mobile{
     margin-top: 30px;
     position: relative;
+    display: block;
   }
   .firstSection_mobile .swiper_mobile{
     overflow: hidden;
@@ -93,18 +94,18 @@
   }
   section.firstSection .speech_bubble_mobile .top_box{
     width: 100%;
-    height: 70px;
+    height: 60px;
     background-color: green;
     border-radius: 5px;
     background-color: #3c3c3c;
     font-size: 12px;
     color: white;
-    padding: 10px;
+    padding: 15px 10px;
     line-height: 120%;
   }
   section.firstSection .speech_bubble_mobile .triangle_box{
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 20px;
     width: 15px;
     height: 15px;
@@ -193,26 +194,27 @@
   }
   .secondSection .parent_box .speech_bubble_mobile{
     position: absolute;
-    top: 100px;
+    top: 50px;
     right: 0px;
     z-index: 200;
     width: 80px;
     height: auto;
+    display: block;
   }
   section.secondSection .speech_bubble_mobile .top_box{
     width: 100%;
-    height: 70px;
+    height: 60px;
     background-color: green;
     border-radius: 5px;
     background-color: #3c3c3c;
     font-size: 12px;
     color: white;
-    padding: 10px;
+    padding: 15px 10px;
     line-height: 120%;
   }
   section.secondSection .speech_bubble_mobile .triangle_box{
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 20px;
     width: 15px;
     height: 15px;
@@ -253,16 +255,29 @@
   .thirdSection .card_box{
     display: none;
   }
-
+  .thirdSection_mobile{
+    display: block;
+  }
   .thirdSection_mobile .swiper_mobile{
     overflow: hidden;
   }
   .thirdSection .swiper-wrapper{
-    width: 500px;
   }
   .thirdSection .swiper-slide{
-    width: 500px;
   }
+  .thirdSection_mobile .swiper-pagination{
+    position: absolute;
+    top: 420px;
+  }
+  .thirdSection_mobile .swiper-pagination-bullet {
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+  }
+  .thirdSection_mobile .swiper-pagination-bullet-active {
+    background-color: #3c3c3c;
+  }
+
   .thirdSection .deco_{
     width: 100%;
     height: 400px;
@@ -287,18 +302,17 @@
   }
   .thirdSection .speech_bubble_mobile .top_box{
     width: 100%;
-    height: 70px;
     background-color: green;
     border-radius: 5px;
     background-color: #3c3c3c;
     font-size: 12px;
     color: white;
-    padding: 10px;
+    padding: 15px 10px;
     line-height: 120%;
   }
   .thirdSection .speech_bubble_mobile .triangle_box{
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 20px;
     width: 15px;
     height: 15px;
@@ -314,9 +328,63 @@
     width: 100%;
   }
 
-  section.fourthSection{
+  section.fourthSection{  
+    width: 100%;
+    padding: 0px 20px;
+  }
+  section.fourthSection .card_box{
     display: none;
   }
+  section.fourthSection h2.section-title{
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: -1px;
+    width: 220px;
+    margin-bottom: 7px;
+  }
+  section.fourthSection h3.section-subtitle{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .fourthSection_mobile{
+    display: block;
+    position: relative;
+  }
+  .fourthSection_mobile .swiper_mobile{
+    overflow: hidden;
+  }
+  .fourthSection_mobile .swiper-wrapper{}
+  .fourthSection_mobile .swiper-slide{
+
+  }
+  .fourthSection_mobile .swiper-pagination{
+    position: absolute;
+    top: 330px;
+  }
+  .fourthSection_mobile .swiper-pagination-bullet {
+    background-color: #000000;
+    width: 10px;
+    height: 10px;
+  }
+  .fourthSection_mobile .swiper-pagination-bullet-active {
+    background-color: #3c3c3c;
+  }
+
+  .fourthSection_mobile .card{
+    width: 100%;
+    box-shadow: none;
+    border: solid 1px black;
+  }
+
+  .line-break::after {
+    content: "";
+    display: block;
+    width: 100%; /* 줄바꿈 효과 */
+    height: 0;
+  }
+
   footer{
     width: 100%;
   }
@@ -324,7 +392,25 @@
     width: 100%;
   }
 }
-@media (min-width: 1300px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1299px) {
   header ul{
     width: 43vw;
   }
@@ -363,6 +449,10 @@
 
 
 
+  .firstSection_mobile{
+    display: none;
+  }
+
 
 
 
@@ -397,6 +487,9 @@
   .secondSection .img_box{
     gap: 1vw;
     margin-left: 1vw;
+  }
+  .secondSection .speech_bubble_mobile{
+    display: none;
   }
 
 
@@ -439,6 +532,12 @@
   }
 
 
+
+
+
+  .thirdSection_mobile{
+    display: none;
+  }
 
 
 
@@ -499,7 +598,6 @@
 
 
 
-
   section.bannerSection{
     position: relative;
     width: 100%;
@@ -529,6 +627,15 @@
     padding: 50px;
   }
   /* footer end */
+
+}
+@media (min-width: 1200px) {
+  
+}
+
+
+
+@media (min-width: 1001px) and (max-width: 1400px) {
 } 
 
 

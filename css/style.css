@@ -273,6 +273,7 @@ main{
   background-color: white;
   color: black;
 } 
+
 /* first_section end */
 
 
@@ -282,7 +283,7 @@ main{
 
 /* firstSection_mobile start */
 .firstSection_mobile {
-  display: block;
+  display: none;
 }
 /* firstSection_mobile end */
 
@@ -382,6 +383,9 @@ section.secondSection{
   background-color: white;
   color: black;
 }
+.secondSection .speech_bubble_mobile{
+  display: none;
+}
 /* second_section end */
 
 /* third_section start */
@@ -467,6 +471,15 @@ section.thirdSection{
   text-decoration: underline;
   transition: color 0.4s ease;
 }
+
+
+
+
+
+
+.thirdSection_mobile{
+  display: none;
+}
 /* third_section end */
 
 /* banner_section start */
@@ -515,7 +528,7 @@ section.fourthSection .card_box{
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.fourthSection .card_box .card{
+.fourthSection .card{
   padding: 20px 0px 0px 30px;
   margin-bottom: 19px;
   height: 315px;
@@ -530,36 +543,39 @@ section.fourthSection .card_box{
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
 }
-.card_box .card .img_box{
+.fourthSection .card .img_box{
   width: 33px;
   margin-bottom: 14px;
   transition: filter 0.4s ease;
 }
-.card_box .card .text_box{
+.fourthSection .card .text_box{
   position: relative;
   margin-bottom: 12px;
   width: 345px;
   height: 230px;
 }
-.card_box .card .text_box h2.card-title{
+.fourthSection .card .text_box h2.card-title{
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 17px;
   transition: color 0.4s ease;
 }
-.card_box .card .text_box p.card-subtitle{
+.fourthSection .card .text_box p.card-subtitle{
   font-weight: 400;
   font-size: 17px;
   line-height: 1.5;
   color: #333;
   transition: color 0.4s ease;
 }
-.card_box .card .text_box a{
+.fourthSection .card .text_box a{
   position: absolute;
   font-size: 16px;
   top: 200px;
   text-decoration: underline;
   transition: color 0.4s ease;
+}
+.fourthSection_mobile{
+  display: none;
 }
 /* fourth_section end */
 
