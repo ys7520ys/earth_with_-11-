@@ -29,7 +29,7 @@ header .logo{
   font-weight: 300;
   margin-left: 50px;
 }
-header ul{
+header .mainNav{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -41,7 +41,7 @@ header ul{
   margin: 0 auto;
   width: 600px;
 }
-header ul li{
+header .mainNav li{
   font-size: 1.1em;
   height: 100%;
 }
@@ -49,7 +49,9 @@ header .mainNav li{
 }
 
 
-
+.mobile_header{
+  display: none;
+}
 
 
   /* header sidebar start */
