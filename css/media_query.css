@@ -93,6 +93,7 @@
     display: block;
   }
   .firstSection_mobile .swiper_mobile{
+    overflow: hidden;
   }
   .firstSection_mobile .swiper-wrapper{
     width: 100%;
@@ -310,6 +311,7 @@
     
   }
   .thirdSection_mobile .swiper_mobile{
+    overflow: hidden;
   }
   .thirdSection .swiper-wrapper{
     
@@ -424,6 +426,7 @@
     position: relative;
   }
   .fourthSection_mobile .swiper_mobile{
+    overflow: hidden;
   }
   .fourthSection_mobile .swiper-wrapper{}
   .fourthSection_mobile .swiper-slide{
