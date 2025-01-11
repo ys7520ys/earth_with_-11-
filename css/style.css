@@ -88,6 +88,7 @@ header .mainNav li{
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.5s ease ;
+  z-index: 1000;
 }
 .menuCloseBtn{
   position: absolute;
@@ -118,6 +119,8 @@ header .mainNav li{
   display: flex;
 }
 .sidebarSubmenu ul{
+  position: absolute;
+  top: 100px;
   display: block;
   width: 100%;
 }
