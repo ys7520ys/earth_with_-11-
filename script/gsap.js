@@ -12,7 +12,8 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
       y: 0, 
       duration: 1, 
       scrollTrigger: {
-        trigger: ".firstSection .section-title, .firstSection .section-subtitle", 
+        trigger: 
+          ".firstSection .section-title, .firstSection .section-subtitle", 
         start: "top 70%",
         end: "top 60%", 
         scrub: 1,
@@ -21,7 +22,7 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
     }
   );
   gsap.fromTo(
-    ".speech_bubble_mobile", 
+    ".firstSection .speech_bubble_mobile", 
     { opacity: 0, x: 100 }, 
     { 
       opacity: 1, 
@@ -53,6 +54,201 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
     }
   );
 
+
+
+
+
+
+
+
+
+
+
+  gsap.fromTo(
+    ".secondSection .section-title, .secondSection .section-subtitle", 
+    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 1, 
+      y: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: 
+          ".secondSection .section-title, .secondSection .section-subtitle", 
+        start: "top 80%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+  gsap.fromTo(
+    ".secondSection .speech_bubble_mobile", 
+    { opacity: 0, x: 100 }, 
+    { 
+      opacity: 1, 
+      x: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: ".secondSection .speech_bubble_mobile", 
+        start: "top 80%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+  gsap.fromTo(
+    ".secondSection ul", 
+    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 1, 
+      y: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: ".secondSection ul", 
+        start: "top 70%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+
+
+
+
+
+
+
+
+
+
+  gsap.fromTo(
+    ".thirdSection .section-title, .thirdSection .section-subtitle", 
+    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 1, 
+      y: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: 
+          ".thirdSection .section-title, .thirdSection .section-subtitle", 
+        start: "top 80%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+  gsap.fromTo(
+    ".thirdSection .speech_bubble_mobile", 
+    { opacity: 0, x: 100 }, 
+    { 
+      opacity: 1, 
+      x: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: ".thirdSection .speech_bubble_mobile", 
+        start: "top 80%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+  gsap.fromTo(
+    ".thirdSection_mobile .swiper_mobile", 
+    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 1, 
+      y: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: ".thirdSection_mobile .swiper_mobile", 
+        start: "top 70%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+
+
+
+
+
+
+
+
+  gsap.fromTo(
+    ".fourthSection .section-title, .fourthSection .section-subtitle", 
+    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 1, 
+      y: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: 
+          ".fourthSection .section-title, .fourthSection .section-subtitle", 
+        start: "top 80%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+  gsap.fromTo(
+    ".fourthSection .speech_bubble_mobile", 
+    { opacity: 0, x: 100 }, 
+    { 
+      opacity: 1, 
+      x: 0, 
+      duration: 1, 
+      scrollTrigger: {
+        trigger: ".fourthSection .speech_bubble_mobile", 
+        start: "top 80%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+  gsap.fromTo(
+    ".fourthSection_mobile .swiper_mobile", 
+    { opacity: 0, rotateX: 0, y: 100}, 
+    { 
+      opacity: 1, 
+      y: 0, 
+      scrollTrigger: {
+        trigger: ".fourthSection_mobile .swiper_mobile", 
+        start: "top 70%",
+        end: "top 60%", 
+        scrub: 1,
+        markers: false,
+      }
+    }
+  );
+
+
+
+
+
+
+
+
+
+
+  gsap.to(".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2), .fourthSection .card:nth-of-type(3)", {
+    scrollTrigger: {
+      trigger: ".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2), .fourthSection .card:nth-of-type(3)",
+      start: "top 80%", 
+      end: "top 70%", 
+      scrub: true, 
+      markers: false,
+    },
+    rotateX: 0, 
+    opacity: 1
+  });
 
 
 // speech_bubble_mobile
@@ -260,7 +456,7 @@ mm.add("(min-width: 1400px)",() => {
         markers: false,
       }
     }
-    );
+  );
   gsap.to(".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2), .fourthSection .card:nth-of-type(3)", {
     scrollTrigger: {
       trigger: ".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2), .fourthSection .card:nth-of-type(3)",
