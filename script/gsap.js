@@ -46,8 +46,8 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".firstSection_mobile .swiper_mobile", 
-        start: "top 70%",
-        end: "top 60%", 
+        start: "top 80%",
+        end: "top 70%", 
         scrub: 1,
         markers: false,
       }
@@ -106,8 +106,8 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".secondSection ul", 
-        start: "top 70%",
-        end: "top 60%", 
+        start: "top 80%",
+        end: "top 70%", 
         scrub: 1,
         markers: false,
       }
@@ -165,8 +165,8 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".thirdSection_mobile .swiper_mobile", 
-        start: "top 70%",
-        end: "top 60%", 
+        start: "top 80%",
+        end: "top 70%", 
         scrub: 1,
         markers: false,
       }
@@ -214,15 +214,15 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
     }
   );
   gsap.fromTo(
-    ".fourthSection_mobile .swiper_mobile", 
+    ".fourthSection_mobile .swiper_mobile .card", 
     { opacity: 0, rotateX: 0, y: 100}, 
     { 
       opacity: 1, 
       y: 0, 
       scrollTrigger: {
-        trigger: ".fourthSection_mobile .swiper_mobile", 
-        start: "top 70%",
-        end: "top 60%", 
+        trigger: ".fourthSection_mobile .swiper_mobile .card", 
+        start: "top 80%",
+        end: "top 70%", 
         scrub: 1,
         markers: false,
       }
@@ -232,23 +232,6 @@ mm.add("(min-width: 320px) and (max-width: 780px)",() => {
 
 
 
-
-
-
-
-
-
-  gsap.to(".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2), .fourthSection .card:nth-of-type(3)", {
-    scrollTrigger: {
-      trigger: ".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2), .fourthSection .card:nth-of-type(3)",
-      start: "top 80%", 
-      end: "top 70%", 
-      scrub: true, 
-      markers: false,
-    },
-    rotateX: 0, 
-    opacity: 1
-  });
 
 
 // speech_bubble_mobile
