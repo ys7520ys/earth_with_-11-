@@ -39,7 +39,7 @@
 
 
   .mySwiper{
-    /* display: none; */
+    display: none;  
   }
   section.firstSection{
     position: relative;
@@ -388,6 +388,7 @@
   section.fourthSection .card{
     padding: 25px 20px;
     margin: 0px;
+    transition: none;
   }
   section.fourthSection .card_box{
     display: none;
