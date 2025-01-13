@@ -213,38 +213,6 @@ $('.fourthSection .card').on('mouseleave', function() {
 
 
 
-                    // 수리 중중
-// if(window.innerWidth <= 768) {
-//   $('.menuBtn').on('click',function(){
-//     $('.sidebar').css({
-//       'width':'100%',
-//       'right':'0%'
-//     })
-//   });
-//   $('.menuCloseBtn').on('click',function(){
-//     $('.sidebar').css({
-//       'right':'-100%'
-//     })
-//     $('.subCategory').fadeOut()
-//     $('.subMain').fadeIn()
-//   })
-// }
-// if(window.innerWidth > 770) {
-//   $('.menuBtn').on('click',function(){
-//     $('.sidebar').css({
-//       'width':'30%',
-//       'right':'0%'
-//     })
-//   });
-//   $('.menuCloseBtn').on('click',function(){
-//     $('.sidebar').css({
-//       'right':'-30%'
-//     })
-//     $('.subCategory').fadeOut()
-//     $('.subMain').fadeIn()
-//   })
-// }
-
 
 
 
@@ -302,15 +270,16 @@ $(function () {
 
     // a href로 구성된 값을 클릭하면 우측에 존재하는 메뉴의 값을 감춘다.
     const target = $(this).attr('href');
-    $('.sidebar').css({
-      'right':'-100%'
-    })
 
+    $('.sidebar').css({
+      'opacity':'0'
+    })
     $('main').removeClass('loaded'); // 등장 애니메이션 제거
 
     // 클릭을 한 후 500ms시간이 지나고 클릭을 한 페이지로 이동한다.
     setTimeout(function () {
       window.location.href = target; // 페이지 이동
+
     }, 500); // transition과 일치하는 시간 설정
     // 600ms의 시간이 지나고, 화면에서 감추었던 main의 값을 화면에 등장시킨다.
     // 우측에 존재하던 메뉴의 값을 닫는다. => 나중애 다시 메뉴의 값을 열면 다시 처음부터 동작할 수 있도록 구성함
@@ -319,7 +288,15 @@ $(function () {
       $('main').addClass('loaded');
       $('.subCategory').fadeOut()
       $('.subMain').fadeIn()
+      $('.sidebar').css({
+        'right':'-100%',
+      })
     }, 600)
+    setTimeout(function() {
+      $('.sidebar').css({
+        'opacity':'1',
+      })
+    },1000)
   });
 });
 

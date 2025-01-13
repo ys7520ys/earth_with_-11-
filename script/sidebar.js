@@ -1,3 +1,4 @@
+// 도엊ㄱ
 function sidebarChange() {
   const sidebar = document.querySelector('.sidebar');
   const sidebarOpenBtn = document.querySelector('.menuBtn');
