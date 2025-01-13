@@ -81,25 +81,21 @@ header .mainNav li{
   border-radius: 5px;
 }
 .sidebar{
-                          /* 수리 중 */
   /* display: none; */
   position: fixed;
   top: 0;
-  right: -50%;
-  width: 50%;
+  right: -100%;
+  width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.5s ease ;
+  transition: 0.5s ease, opacity 0.4s ;
   z-index: 1000;
 }
-.mobile_sideabar{
-  width: 100%;
-  right: -100%;
+.sidebar_classList{
+  right: 0%;
 }
-.deskTop_sidebar{
-  width: 40%;
-  right: -40%;
-}
+
+
 
 
 .menuCloseBtn{
@@ -161,7 +157,9 @@ main{
 /* swiper_section start */
 .mySwiper {
   width: 100%;
-  height: 800px;
+  height: 40vw;
+  min-height: 500px;
+  max-height: 700px;
 }
 .mySwiper .swiper-slide {
   display: -webkit-flex;
