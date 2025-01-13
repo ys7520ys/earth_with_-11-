@@ -6,7 +6,7 @@ function sidebarChange() {
   sidebar.classList.remove('.mobile-class','.desktop-class');
 
 
-  if(viewportWidth <= 768) {
+  if(viewportWidth >= 320 && viewportWidth <= 768) {
     $('.menuBtn').on('click',function(){
       $('.sidebar').css({
         'width':'100%',
@@ -20,24 +20,22 @@ function sidebarChange() {
       $('.subCategory').fadeOut()
       $('.subMain').fadeIn()
     })
-  }
-  else if(viewportWidth > 770) {
+  } else if(viewportWidth > 768) {
     $('.menuBtn').on('click',function(){
       $('.sidebar').css({
-        'width':'30%',
+        'width':'40%',
         'right':'0%'
       })
     });
     $('.menuCloseBtn').on('click',function(){
       $('.sidebar').css({
-        'right':'-30%'
+        'right':'-40%'
       })
       $('.subCategory').fadeOut()
       $('.subMain').fadeIn()
     })
   }
   
-
 
 }
 

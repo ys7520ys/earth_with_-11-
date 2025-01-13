@@ -92,6 +92,16 @@ header .mainNav li{
   transition: 0.5s ease ;
   z-index: 1000;
 }
+.mobile_sideabar{
+  width: 100%;
+  right: -100%;
+}
+.deskTop_sidebar{
+  width: 40%;
+  right: -40%;
+}
+
+
 .menuCloseBtn{
   position: absolute;
   left: 20px;

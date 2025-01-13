@@ -299,15 +299,22 @@ $(function () {
   // 페이지 전환 시 페이드아웃 효과 적용
   $('.subCategory li a:not(.backCategory), .logo a, .gotoLogin, section a').on('click', function (e) {
     e.preventDefault();
+
+    // a href로 구성된 값을 클릭하면 우측에 존재하는 메뉴의 값을 감춘다.
     const target = $(this).attr('href');
     $('.sidebar').css({
-      'right':'-500px'
+      'right':'-100%'
     })
 
     $('main').removeClass('loaded'); // 등장 애니메이션 제거
+
+    // 클릭을 한 후 500ms시간이 지나고 클릭을 한 페이지로 이동한다.
     setTimeout(function () {
       window.location.href = target; // 페이지 이동
     }, 500); // transition과 일치하는 시간 설정
+    // 600ms의 시간이 지나고, 화면에서 감추었던 main의 값을 화면에 등장시킨다.
+    // 우측에 존재하던 메뉴의 값을 닫는다. => 나중애 다시 메뉴의 값을 열면 다시 처음부터 동작할 수 있도록 구성함
+    //    해당 메뉴의 자식의 값을 화면에서 닫는다. => 처음부터 다시 타고 들어갈 수 있도록 만들기 위해서 
     setTimeout(function() {
       $('main').addClass('loaded');
       $('.subCategory').fadeOut()
