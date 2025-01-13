@@ -214,18 +214,37 @@ $('.fourthSection .card').on('mouseleave', function() {
 
 
                     // 수리 중중
-$('.menuBtn').on('click',function(){
-  $('.sidebar').css({
-    'right':'0px'
-  })
-});
-$('.menuCloseBtn').on('click',function(){
-  $('.sidebar').css({
-    'right':'-500px'
-  })
-  $('.subCategory').fadeOut()
-  $('.subMain').fadeIn()
-})
+// if(window.innerWidth <= 768) {
+//   $('.menuBtn').on('click',function(){
+//     $('.sidebar').css({
+//       'width':'100%',
+//       'right':'0%'
+//     })
+//   });
+//   $('.menuCloseBtn').on('click',function(){
+//     $('.sidebar').css({
+//       'right':'-100%'
+//     })
+//     $('.subCategory').fadeOut()
+//     $('.subMain').fadeIn()
+//   })
+// }
+// if(window.innerWidth > 770) {
+//   $('.menuBtn').on('click',function(){
+//     $('.sidebar').css({
+//       'width':'30%',
+//       'right':'0%'
+//     })
+//   });
+//   $('.menuCloseBtn').on('click',function(){
+//     $('.sidebar').css({
+//       'right':'-30%'
+//     })
+//     $('.subCategory').fadeOut()
+//     $('.subMain').fadeIn()
+//   })
+// }
+
 
 
 

@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="어스위드 | 자연에게 선물하는 최고의 방법법">
-    <!-- !!! google에서 종료를 한 상태로 description이나 title의 값을 통해서 seo의 값을 강화해야 한다. !!! -->
   <meta name="keywords" content="자연환경 보호, 환경보호, 지속 가능성, 친환경, 환경운동">
   <meta name="description" content="환경보호 회사의 공식 웹사이트입니다. 자연과 조화를 이루는 지속 가능한 미래를 함께 만들어갑니다.">
 
@@ -26,6 +25,9 @@
 
   <!-- 파비콘 -->
   <link rel="icon" href="image/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- pretendard font-family 연결 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
 
   <!-- 제목 -->
   <title>어스위드 The journey to protect the Earth is not one you take alone</title>
@@ -54,6 +56,7 @@
   <script src="script/gsap.js" defer></script>
   <script src="script/smoothScroll.js" defer></script>
   <script src="script/effect.js" defer></script>
+  <script src="script/sidebar.js" defer></script>
 </head>
 
 <body>
@@ -76,6 +79,7 @@
         </ul>
       </nav>
 
+      <!-- header menu button -->
       <button class="menuBtn">
         <span></span>
         <span></span>
@@ -147,11 +151,10 @@
         </div>
       </div>
       <!-- header 말풍선 -->
-      <div class="speech_bubble">
+      <div class="speech_bubble" aria-hidden="true">
         <div class="triangle"></div>
         <div class="bubble_area">
           <p>
-            
           </p>
         </div>
       </div>
@@ -273,7 +276,7 @@
         <h2 class="sr-only" id="현재의상황-title">지구가 걸어온 길에 대해 알아보기기</h2>
         <div class="parent_box">
           <div class="text_box">
-            <h2 class="section-title">지구의 시간은 멈춰있다</h2>
+            <h2 class="section-title">지구의 시간은<span class="line-break"></span>멈춰있다</h2>
             <h3 class="section-subtitle">지구에 살고 있는 생명체들과<span class="line-break"></span>함께 살아가기 위해서 좀 더<span class="line-break"></span>알아보아요</h3>
             <ul>
               <li>지구촌의 상황</li>
