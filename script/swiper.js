@@ -1,6 +1,5 @@
 var swiper1 = new Swiper(".mySwiper", {
   speed: 1500, 
-  loop: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
