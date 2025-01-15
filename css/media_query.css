@@ -343,7 +343,7 @@ ul.subCategory{
   }
   .secondSection .parent_box .speech_bubble_mobile{
     position: absolute;
-    top: 110px;
+    top: 90px;
     right: 0px;
     z-index: 200;
     width: 80px;
@@ -579,7 +579,7 @@ ul.subCategory{
   }
   section.fourthSection .speech_bubble_mobile{
     position: absolute;
-    top: -100px;
+    top: -90px;
     right: 20px;
     z-index: 200;
     width: 80px;
