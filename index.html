@@ -151,14 +151,16 @@
         </div>
       </div>
       <!-- header 말풍선 -->
-      <div class="speech_bubble" aria-hidden="true">
+      <!-- !!데스크탑에서 등장할 speech_bubble -->
+      <div class="speech_bubble" aria-hidden="false">
         <div class="triangle"></div>
         <div class="bubble_area">
           <p>
           </p>
         </div>
       </div>
-      <div class="mobile_header">
+      <!-- !!모바일에서 등장할 header -->
+      <div class="mobile_header mobile-content" aria-hidden="true">
         <ul class="mainNav_mobile">
           <li><a href="#part1" aria-label="우리의 이야기 영역으로 이동하기">이야기</a></li>
           <li><a href="#part2" aria-label="현재의 위기 영역으로 이동하기">위기</a></li>
@@ -173,7 +175,8 @@
     <main>
 
       <!-- swiper_slide start -->
-      <section class="swiper mySwiper section">
+      <!-- !!데스크탑에서서 등장할 swiper -->
+      <section class="swiper mySwiper section desktop-content" aria-hidden="false">
         <h2 class="sr-only">스와이퍼 영역</h2>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -199,7 +202,10 @@
         <h2 class="sr-only" id="우리의이야기-title">지구 온난화로 인한 피해를 알아보기</h2> 
         <h2 class="section-title">어떠한 이야기들이<span class="line-break"></span>존재할까요?</h2>
         <h3 class="section-subtitle">우리는 이러한 이야기들에 대해서<span class="line-break"></span>좀 더 깊게 대화해야 합니다.</h3>
-        <div class="parent_box">
+
+        <!-- 모바일의 값에서는 등장하지 않는다. -->
+        <!-- !!데스크탑탑에서 등장할 header -->
+        <div class="parent_box desktop-content" aria-hidden="false">
           <div class="img_box">
             <img src="image/sections/wave.jpg" alt="검은색으로 물든 바다 이미지">
             <div class="text_box">
@@ -226,8 +232,8 @@
 
 
 
-
-        <div class="firstSection_mobile">
+        <!-- !!모바일에서 등장할 header -->
+        <div class="firstSection_mobile desktop-content" aria-hidden="true">
           <div class="speech_bubble_mobile">
             <div class="top_box">
               슬라이드로<br>넘겨보아요!
@@ -290,7 +296,8 @@
               <a href="#none"><li>기록이 아닌 사건이 되었다</li></a>
             </ul>
           </div>
-          <div class="img_box">
+          <!-- !!모바일에서 등장할 img area -->
+          <div class="img_box desktop-content" aria-hidden="false">
             <div>
               <img src="image/sections/oil_1.jpg" alt="기름의 역사와 시간의 변화를 나타내는 포스터 이미지">
               <a href="#none">기름의 역사 알아보기</a>
@@ -308,20 +315,6 @@
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- second_section end -->
 
       <!-- third_section start -->
@@ -329,7 +322,8 @@
         <h2 class="sr-only" id="상황알아보기-title">지구온난화로 인한 피해 알아보기기</h2> 
         <h2 class="section-title">자연은 생각을<span class="line-break"></span>읽어요</h2>
         <h3 class="section-subtitle">지구에 대해서 좀 더 깊게 생각<span class="line-break"></span>하고 접근하는 행위를 만듭니다</h3>
-        <div class="card_box">
+        <!-- !!데스크탑에서 등장할 header -->
+        <div class="card_box desktop-content" aria-hidden="false">
           <div class="deco_">
             <div class="img_box">
               <img src="image/sections/card1.jpg" alt="">
@@ -371,8 +365,8 @@
 
 
 
-
-        <div class="thirdSection_mobile">
+        <!-- !!모바일에서 등장할 card swiper -->
+        <div class="thirdSection_mobile mobile-content" aria-hidden="true">
           <div class="speech_bubble_mobile">
             <div class="top_box">
               슬라이드로<br>넘겨보아요!
@@ -432,9 +426,6 @@
             <!-- Navigation buttons -->
           </div>
         </div>
-
-
-
       </section>
       <!-- third_section end -->
 
@@ -445,7 +436,8 @@
         <h2 class="sr-only" id="캠페인-title">자연환경보호 캠페인 카드 영역</h2>
         <h2 class="section-title">사회를 환기할<span class="line-break"></span>여러 가지 생각들</h2>
         <h3 class="section-subtitle">함께 만들어 갈 가치관들을<span class="line-break"></span>알아보아요</h3>
-        <div class="card_box">
+        <!-- !!데스크탑탑서 등장할 section area -->
+        <div class="card_box desktop-content" aria-hidden="false">
           <div class="card">
             <img class="img_box" src="image/sections/icons/card_icon1.jpg" alt=""> 
             <div class="text_box">
@@ -508,8 +500,8 @@
           </div>
         </div>
 
-
-        <div class="fourthSection_mobile">
+        <!-- !!모바일에서 등장할 card swiper -->
+        <div class="fourthSection_mobile mobile-content" aria-hidden="true">
           <div class="speech_bubble_mobile">
             <div class="top_box">
               슬라이드로<br>넘겨보아요!
@@ -606,12 +598,13 @@
       <!-- fourth_section end -->
     
       <!-- banner start -->
-      <section class="bannerSection" aria-labelledby="배너-title">
+      <!-- !!데스크탑에서 등장할 header -->
+      <section class="bannerSection" aria-labelledby="배너-title desktop-content" aria-hidden="false">
         <h2 class="sr-only" id="배너-title">사람들이 지구온난화에 대해서 좀 더 생각하길 바라는 배너</h2>
         <img src="image/sections/banner/banner_change.jpg" alt="지구 온난화를 생각하자는 이미지">
       </section>
       <!-- banner end -->
-      
+
     </main>
     <!-- main end -->
 
