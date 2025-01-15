@@ -46,8 +46,8 @@ mm.add("(max-width: 1199px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".firstSection_mobile .swiper_mobile", 
-        start: "top 80%",
-        end: "top 70%", 
+        start: "top 90%",
+        end: "top 80%", 
         scrub: 1,
         markers: false,
       }
@@ -106,8 +106,8 @@ mm.add("(max-width: 1199px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".secondSection ul", 
-        start: "top 80%",
-        end: "top 70%", 
+        start: "top 90%",
+        end: "top 80%", 
         scrub: 1,
         markers: false,
       }
@@ -165,8 +165,8 @@ mm.add("(max-width: 1199px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".thirdSection_mobile .swiper_mobile", 
-        start: "top 80%",
-        end: "top 70%", 
+        start: "top 90%",
+        end: "top 80%", 
         scrub: 1,
         markers: false,
       }
@@ -221,8 +221,8 @@ mm.add("(max-width: 1199px)",() => {
       y: 0, 
       scrollTrigger: {
         trigger: ".fourthSection_mobile .swiper_mobile .card", 
-        start: "top 80%",
-        end: "top 70%", 
+        start: "top 90%",
+        end: "top 80%", 
         scrub: 1,
         markers: false,
       }
