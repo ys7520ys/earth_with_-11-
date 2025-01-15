@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 let mm = gsap.matchMedia();
 
 // ----------gsap mediaquery 768px----------
-mm.add("(min-width: 320px) and (max-width: 780px)",() => {
+mm.add("(min-width: 320px) and (max-width: 1199px)",() => {
   gsap.fromTo(
     ".firstSection .section-title, .firstSection .section-subtitle", 
     { opacity: 0, y: 100 }, 

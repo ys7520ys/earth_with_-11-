@@ -1,5 +1,5 @@
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   header{
     height: 40px;
     line-height: 50px;
@@ -142,6 +142,7 @@ ul.subCategory{
   }
   section.firstSection{
     position: relative;
+    max-width: 500px;
     width: 100%;
     padding: 0px;
     overflow: hidden;
@@ -150,8 +151,10 @@ ul.subCategory{
     padding-top: 40px;
     font-style: normal;
     letter-spacing: -1px;
-    width: 260px;
-    font-size: 32px;
+    width: auto;
+    /*font-size: 32px;*/
+    font-size: clamp(32px, 4vw, 50px);
+    font-weight: 600;
     text-align: left;
     line-height: 120%;
     margin-bottom: 10px;
@@ -159,10 +162,11 @@ ul.subCategory{
   }
   section.firstSection .section-subtitle{
     text-align: left;
-    width: 230px;
+    width: auto;
     line-height: 120%;
-    font-size: 16px;
+    font-size: clamp(16px, 2vw, 18px);
     padding-left: 20px;
+    font-weight: 500;
   }
   section.firstSection .text_box{
     width: 100%;
@@ -172,15 +176,16 @@ ul.subCategory{
     display: none;
   }
   .firstSection .text_box h2.card-title{
-    font-size: 22px;
-    top: 30px;
+    font-size: clamp(22px, 4vw, 30px);
+    font-weight: 500;
   }
   .firstSection .text_box p.card-subtitle{
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 16px);
     width: 100%;
     padding: 0px 30px;
+    font-weight: 500;
     left: 0px;
-    top: 65px;
+    top: 70px;
   }
   .firstSection .text_box a{
     display: none;
@@ -202,9 +207,9 @@ ul.subCategory{
   }
   .firstSection_mobile .img_box{
     width: 100%;
-    height: 50vw;
     min-height: 300px;
-    max-height: 600px;
+    max-height: 500px;
+    height: 50vw;
     box-shadow: none;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
   }
@@ -242,16 +247,14 @@ ul.subCategory{
     background-color: #3c3c3c;
   }
   .firstSection_mobile .swiper-pagination{
-    position: absolute;
-    top: 315px;
   }
   .firstSection_mobile .swiper-pagination-bullet {
-    background-color: #000000;
+    background-color: #ffffff;
     width: 10px;
     height: 10px;
   }
   .firstSection_mobile .swiper-pagination-bullet-active {
-    background-color: #3c3c3c;
+    background-color: #ffffff;
   }
 
 
@@ -272,6 +275,7 @@ ul.subCategory{
 
 
   section.secondSection{
+    max-width: 500px;
     width: 100%;
     padding: 0px 20px;
     overflow: hidden;
@@ -283,17 +287,19 @@ ul.subCategory{
   .secondSection .text_box ul {
     padding-left: 0px;
   }
-  .text_box h2.section-title{
+  .secondSection .text_box h2.section-title{
     padding-top: 40px;
-    font-size: 32px;
-    width: 220px;
+    width: auto;
     margin-bottom: 10px;
+    font-size: clamp(32px, 4vw, 50px);
+    font-weight: 600;
   }
 
-  .text_box h3.section-subtitle{
-    font-size: 16px;
-    width: 260px;
+  .secondSection .text_box h3.section-subtitle{
+    width: auto;
     margin-bottom: 20px;
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 500;
   }
 
   section.secondSection .parent_box .img_box{
@@ -309,18 +315,23 @@ ul.subCategory{
   }
   .secondSection .text_box ul{
     font-size: 16px;
+    min-height: 300px;
+    max-height: 500px;
   }
   .secondSection .text_box ul li{
     transition: 0.3s;
-    text-align: center;
-    line-height: 45px;
-    height: 45px;
+    height: 5vw;
+    min-height: 45px;
     margin-bottom: 7px;
     border: solid 1px black;
     padding: 0px;
     border-radius: 5px;
     background-color: #EDEDED;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .secondSection .text_box ul li::before{
@@ -375,6 +386,7 @@ ul.subCategory{
 
 
   section.thirdSection{
+    max-width: 500px;
     width: 100%;
     padding: 0px;
     overflow: hidden;
@@ -392,21 +404,21 @@ ul.subCategory{
   .thirdSection h2.section-title{
     padding-top: 40px;
     text-align: left;
-    font-size: 32px;
-    width: 220px;
     margin-bottom: 10px;
     padding-left: 20px;
+    font-size: clamp(32px, 4vw, 50px);
+    font-weight: 600;
   }
 
   .thirdSection h3.section-subtitle{
     text-align: left;
-    font-size: 16px;
-    width: 250px;
     margin-bottom: 30px;
     padding-left: 20px;
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 500;
   }
   .thirdSection .text_box h2.card-title{
-    font-size: 22px;
+    font-size: 20px;
   }
   .thirdSection .text_box p.card-subtitle{
     font-size: 14px;
@@ -417,7 +429,6 @@ ul.subCategory{
   }
   .thirdSection_mobile{
     display: block;
-    
   }
   .thirdSection_mobile .swiper_mobile{
     
@@ -429,8 +440,7 @@ ul.subCategory{
     padding: 0px 20px;
   }
   .thirdSection_mobile .swiper-pagination{
-    position: absolute;
-    top: 315px;
+    top: inherit;
   }
   .thirdSection_mobile .swiper-pagination-bullet {
     background-color: #000000;
@@ -443,7 +453,9 @@ ul.subCategory{
 
   .thirdSection .deco_{
     width: 100%;
-    height: 305px;
+    min-height: 300px;
+    max-height: 500px;
+    height: 50vw;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
   }
   .thirdSection .text_box a{
@@ -491,6 +503,7 @@ ul.subCategory{
   }
 
   section.fourthSection{  
+    max-width: 500px;
     width: 100%;
     padding: 0px;
     overflow: hidden;
@@ -505,17 +518,18 @@ ul.subCategory{
   }
   section.fourthSection h2.section-title{
     text-align: left;
-    font-size: 32px;
+    font-size: clamp(32px, 4vw, 50px);
     letter-spacing: -1px;
-    width: 240px;
     margin-bottom: 10px;
     padding-left: 20px;
+    font-weight: 600;
   }
   section.fourthSection h3.section-subtitle{
     text-align: left;
-    font-size: 16px;
+    font-size: clamp(16px, 2vw, 18px);
     margin-bottom: 30px;
     padding-left: 20px;
+    font-weight: 500;
   }
   .fourthSection .card .text_box{
     position: relative;
@@ -543,8 +557,7 @@ ul.subCategory{
     padding: 0px 20px;
   }
   .fourthSection_mobile .swiper-pagination{
-    position: absolute;
-    top: 305px;
+    top: inherit;
   }
   .fourthSection_mobile .swiper-pagination-bullet {
     background-color: #000000;
@@ -555,12 +568,14 @@ ul.subCategory{
     background-color: #3c3c3c;
   }
   .fourthSection_mobile .card{
-    height: 290px;
+    min-height: 300px;
+    max-height: 500px;
+    height: 50vw;
     width: 100%;
     border: solid 1px black;
   }
   .fourthSection .card .text_box a{
-    display: none;;
+    display: none;
   }
   section.fourthSection .speech_bubble_mobile{
     position: absolute;
@@ -626,7 +641,7 @@ ul.subCategory{
 
 
 
-@media (min-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1340px) {
 
   .sidebar{
     /*pc에서 구성할 사이드바의 값값*/
