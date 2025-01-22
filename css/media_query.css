@@ -1,7 +1,7 @@
 
 @media (max-width: 1200px) {
   header{
-    height: 40px;
+    height: 50px;
     line-height: 50px;
   }  
   header .logo{
@@ -19,7 +19,7 @@
   .mobile_header{
     position: fixed;
     left: 0;
-    top: 40px;
+    top: 50px;
     display: block;
     width: 100%;
     height: 45px;
@@ -46,7 +46,7 @@
 
 
 
-  .menuBtn span{
+.menuBtn span{
   width: 100%;
   height: 5px;
   background-color: #3c3c3c;
@@ -180,7 +180,7 @@ ul.subCategory{
     font-weight: 500;
   }
   .firstSection .text_box p.card-subtitle{
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(14px, 2vw, 18px);
     width: 100%;
     padding: 0px 30px;
     font-weight: 500;
@@ -319,6 +319,7 @@ ul.subCategory{
     max-height: 500px;
   }
   .secondSection .text_box ul li{
+    font-size: clamp(16px, 2vw, 18px);
     transition: 0.3s;
     height: 5vw;
     min-height: 45px;
@@ -418,10 +419,10 @@ ul.subCategory{
     font-weight: 500;
   }
   .thirdSection .text_box h2.card-title{
-    font-size: 20px;
+    font-size: clamp(22px, 4vw, 30px);
   }
   .thirdSection .text_box p.card-subtitle{
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 18px);
     margin-bottom: 0px;
   }
   .thirdSection .card_box{
@@ -440,7 +441,6 @@ ul.subCategory{
     padding: 0px 20px;
   }
   .thirdSection_mobile .swiper-pagination{
-    top: inherit;
   }
   .thirdSection_mobile .swiper-pagination-bullet {
     background-color: #000000;
@@ -538,10 +538,10 @@ ul.subCategory{
     height: 200px;
   }
   .fourthSection .card .text_box h2.card-title{
-    font-size: 22px;
+    font-size: clamp(22px, 4vw, 30px);
   }
   .fourthSection .card .text_box p.card-subtitle{
-    font-size: 14px;
+    font-size: clamp(14px, 2vw, 18px);
   }
 
 
@@ -557,7 +557,6 @@ ul.subCategory{
     padding: 0px 20px;
   }
   .fourthSection_mobile .swiper-pagination{
-    top: inherit;
   }
   .fourthSection_mobile .swiper-pagination-bullet {
     background-color: #000000;
@@ -568,6 +567,7 @@ ul.subCategory{
     background-color: #3c3c3c;
   }
   .fourthSection_mobile .card{
+    position: relative;
     min-height: 300px;
     max-height: 500px;
     height: 50vw;

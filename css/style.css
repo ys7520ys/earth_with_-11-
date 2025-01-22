@@ -1,62 +1,57 @@
-
-/* font */
-body, html{
-  /* font-family: "Noto Sans KR", serif; */
-  /* font-family: 'Pretendard-Regular'; */
-}
-/* 페이지 전환 스타일1 */
 body{
   overflow-x: hidden;
   font-family: "Pretendard Variable";
 }
-/* header start */
+/* 데스크탑 헤더 시작작 */
 header{
-  position: relative;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+
+  width: 100%;
   height: 70px;
   line-height: 70px;
+
   background-color: #fff;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
 }
+.mobile_header{
+  display: none;
+}
+
 header .logo{
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transform: translate(0%,-50%);
+  margin-left: 50px;
+
   font-size: 20px;
   font-weight: 300;
-  margin-left: 50px;
 }
+
+
 header .mainNav{
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%,-50%);
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin: 0 auto;
   width: 600px;
+  margin: 0 auto;
 }
 header .mainNav li{
   font-size: 1.1em;
   height: 100%;
 }
-header .mainNav li{
-}
 
 
-.mobile_header{
-  display: none;
-}
 
-
-  /* header sidebar start */
+/* 헤더 사이드바 시작 */
 .menuBtn{
   position: absolute;
   right: 0;
@@ -80,8 +75,10 @@ header .mainNav li{
   display: block;
   border-radius: 5px;
 }
+
+
+/* 사이드바 */
 .sidebar{
-  /* display: none; */
   position: fixed;
   top: 0;
   right: -100%;
@@ -95,9 +92,31 @@ header .mainNav li{
   right: 0%;
 }
 
+/* 사이드바 서브메뉴 */
+.sidebarSubmenu{
+  height: 80%;
+  display: flex;
+}
+.sidebarSubmenu ul{
+  position: absolute;
+  top: 100px;
+  display: block;
+  width: 100%;
+}
+.subCategory li:first-of-type{
+  padding: 50px 0px;
+  font-weight: 500;
+}
+.sidebarSubmenu ul li a{
+  color: white;
+  padding: 0px 50px;
+  font-size: 24px;
+}
+ul.subCategory{
+  display: none;
+}
 
-
-
+/* 메뉴 닫기 버튼 */
 .menuCloseBtn{
   position: absolute;
   left: 20px;
@@ -122,36 +141,59 @@ header .mainNav li{
   background-color: #ffffff;
   display: block;
 }
-.sidebarSubmenu{
-  height: 80%;
-  display: flex;
-}
-.sidebarSubmenu ul{
-  position: absolute;
-  top: 100px;
-  display: block;
-  width: 100%;
-}
-.subCategory li:first-of-type{
-  padding: 50px 0px;
-  font-weight: 500;
-}
-.sidebarSubmenu ul li a{
-  color: white;
-  padding: 0px 50px;
-  font-size: 24px;
-}
-ul.subCategory{
-  display: none;
-}
-  /* header sidebar end */
-/* header end */
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main{
   opacity: 0;
   transform: translateY(-20px);
   transition: transform 0.3s, opacity 0.4s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* swiper_section start */
@@ -182,8 +224,8 @@ main{
 }
 .mySwiper .swiper-pagination-bullet {
   background: #ffffff;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
 }
 .mySwiper .swiper-pagination-bullet-active {
   background: #ffffff;
@@ -513,6 +555,8 @@ section.bannerSection{
 }
 section.bannerSection img{
   height: 100%;   
+  width: 100%;
+  object-fit: cover;
 }
 /* banner_section end */
 
@@ -600,7 +644,7 @@ section.fourthSection .card_box{
 /* fourth_section end */
 
 /* footer start*/
-footer{
+/* footer{
   background-color: #f5f5f5;
   width: 100%;
 }
@@ -628,7 +672,16 @@ footer nav a{
 }
 footer nav a:hover{
   text-decoration: underline;
+} */
+
+footer{
+  width: 100%;
+  height: 250px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
 }
+
+
 /* footer end */
 
 /* sr-only Style */
