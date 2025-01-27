@@ -255,7 +255,6 @@ main{
 /* first_section start */
 .firstSection{
   height: 100vh;
-  min-height: 1000px;
   width: 1260px;
   margin: auto;
   display: flex;
@@ -431,7 +430,6 @@ main{
 /* second_section start */
 .secondSection{
   height: 100vh;
-  min-height: 1000px;
   width: 1260px;
   margin: auto;
   display: flex;
@@ -564,7 +562,6 @@ main{
 /* third_section start */
 .thirdSection{
   height: 100vh;
-  min-height: 1000px;
   width: 1260px;
   margin: auto;
   display: flex;
@@ -724,7 +721,6 @@ section.bannerSection img{
 /* fourth_section start */
 .fourthSection{
   height: 100vh;
-  min-height: 1000px;
   width: 1260px;
   margin: auto;
   display: flex;
