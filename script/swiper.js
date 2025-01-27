@@ -1,3 +1,4 @@
+// 데스크탑 스와이퍼 동작
 var swiper1 = new Swiper(".mySwiper", {
   speed: 1500, 
   loop: true,
@@ -15,6 +16,7 @@ var swiper1 = new Swiper(".mySwiper", {
   },
 });
 
+// 모바일 스와이퍼 동작작
 var swiper2 = new Swiper(".swiper_mobile", {
   speed: 300,
   pagination: {

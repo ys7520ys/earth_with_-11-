@@ -1,4 +1,5 @@
-// ----------header speech_bubble 호버 이펙트 start----------
+// <----------HEADER---------->
+  // 헤더 말풍선 동작 (마우스 인)
 $('.mainNav li').on('mouseenter', function() {
   var index = $(this).index(); // 현재 li의 인덱스 값값
   $('.speech_bubble').stop(true, true).css('opacity', '1'); 
@@ -45,20 +46,52 @@ $('.mainNav li').on('mouseenter', function() {
   }
 });
 
-// header nav 영역을 벗어날 시 동작할 함수
+  // 헤더 말풍선 동작 (마우스 아웃)
 $('header ul').on('mouseleave', function() {
   $('.speech_bubble').stop(true, true).css({
     'top': '-100px',
     'opacity': '0'
   });
 });
-// ----------header speech_bubble 호버 이펙트 end----------
+
+  // 헤더 사이드바 세부메뉴 동작
+$('.subMain > li:nth-of-type(1) > a').on('click',function(){
+  $('ul.sub1').fadeIn()
+  $('.subMain').fadeOut()
+})
+$('.subMain > li:nth-of-type(2) > a').on('click',function(){
+  $('ul.sub2').fadeIn()
+  $('.subMain').fadeOut()
+})
+$('.subMain > li:nth-of-type(3) > a').on('click',function(){
+  $('ul.sub3').fadeIn()
+  $('.subMain').fadeOut()
+})
+$('.subMain > li:nth-of-type(4) > a').on('click',function(){
+  $('ul.sub4').fadeIn()
+  $('.subMain').fadeOut()
+})
+$('.subMain > li:nth-of-type(5) > a').on('click',function(){
+  $('ul.sub5').fadeIn()
+  $('.subMain').fadeOut()
+})
+$('.subMain > li:nth-of-type(6) > a').on('click',function(){
+  $('ul.sub6').fadeIn()
+  $('.subMain').fadeOut()
+})
+$('.backCategory').on('click',function(){
+  $('.subCategory').fadeOut()
+  $('.subMain').fadeIn()
+})
+// </----------HEADER---------->
 
 
 
 
 
-
+// <----------BODY---------->
+  // <----------section---------->
+    // 첫 번째 섹션 버튼 동작 (마우스 인 & 아웃)
 $('.firstSection .text_box a').on('mouseenter', function() {
   $(this).parents('.img_box').css({
     'outline':'solid 5px #3c3c3c'
@@ -84,9 +117,7 @@ $('.firstSection .text_box a').on('mouseout', function() {
   })
 });
 
-
-
-
+    // 두 번째 섹션 버튼 동작 (마우스 인 & 아웃)
 $('.secondSection .img_box a').on('mouseenter', function() {
   $(this).closest('div').css({
     'outline':'solid 5px #3c3c3c'
@@ -106,10 +137,7 @@ $('.secondSection .img_box a').on('mouseout', function() {
   })
 });
 
-
-
-
-
+    // 세 번째 섹션 버튼 동작 (마우스 인 & 아웃)
 $('.thirdSection .card_box a').on('mouseenter', function() {
   $(this).parents('.text_box').siblings('.img_box').children('img').css({
     'scale': '1.1',
@@ -143,13 +171,7 @@ $('.thirdSection .card_box a').on('mouseout', function() {
   })
 });
 
-
-
-
-
-
-
-
+    // 네 번째 섹션 버튼 동작 (마우스 인 & 아웃)
 $('.fourthSection .card a').on('mouseenter', function() {
   $(this).parents('.card').css({
     'background-color':'#3c3c3c'
@@ -172,55 +194,9 @@ $('.fourthSection .card').on('mouseleave', function() {
     'filter':'invert(0)'
   })
 });
+  // </----------section---------->
 
-
-
-
-
-
-
-/* sidebarSubmenu 동작 */
-$('.subMain > li:nth-of-type(1) > a').on('click',function(){
-  $('ul.sub1').fadeIn()
-  $('.subMain').fadeOut()
-})
-$('.subMain > li:nth-of-type(2) > a').on('click',function(){
-  $('ul.sub2').fadeIn()
-  $('.subMain').fadeOut()
-})
-$('.subMain > li:nth-of-type(3) > a').on('click',function(){
-  $('ul.sub3').fadeIn()
-  $('.subMain').fadeOut()
-})
-$('.subMain > li:nth-of-type(4) > a').on('click',function(){
-  $('ul.sub4').fadeIn()
-  $('.subMain').fadeOut()
-})
-$('.subMain > li:nth-of-type(5) > a').on('click',function(){
-  $('ul.sub5').fadeIn()
-  $('.subMain').fadeOut()
-})
-$('.subMain > li:nth-of-type(6) > a').on('click',function(){
-  $('ul.sub6').fadeIn()
-  $('.subMain').fadeOut()
-})
-$('.backCategory').on('click',function(){
-  $('.subCategory').fadeOut()
-  $('.subMain').fadeIn()
-})
-
-
-
-
-
-
-
-
-
-
-
-
-// 페이지 전환
+  // 페이지전환 애니메이션 동작
 $(function () {
   $('main').addClass('loaded');
   $('.subCategory li a:not(.backCategory), .logo a, .gotoLogin, section a').on('click', function (e) {
@@ -250,11 +226,18 @@ $(function () {
     },1000)
   });
 });
-
 if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
   $('.mainNav li').fadeIn();
 } else{
   $('.mainNav li a').fadeOut()
 }
+// </----------BODY---------->
 
 
+
+$('.menuBtn').on('click',function(){
+  $('.sidebar').fadeIn("fast");
+})
+$('.menuCloseBtn').on('click',function(){
+  $('.sidebar').fadeOut("slow");
+})

@@ -1,907 +1,136 @@
-
+/* 모바일 + 태블릿 */
 @media (max-width: 1200px) {
-  header{
-    height: 50px;
-    line-height: 50px;
-  }  
-  header .logo{
-    margin-left: 20px;
-    font-size: 18px;
-  }
-  header .menuBtn{
-    margin-right: 20px;
-    height: 80%;
-    width: 50px;
-  }
-  header .mainNav{
-    display: none;
-  }
-  .mobile_header{
-    position: fixed;
-    left: 0;
-    top: 50px;
-    display: block;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    background-color: #3c3c3c;
-    z-index: 10;
-  }
-  .mobile_header .mainNav_mobile{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-  }
-  .mobile_header .mainNav_mobile li a{
-    color: white;
-  }
-
-
-
-
-
-
-
-
-
-
-.menuBtn span{
-  width: 100%;
-  height: 5px;
-  background-color: #3c3c3c;
-  display: block;
-  border-radius: 5px;
-}
-.sidebar{
-  right: -100%;
-  width: 100%;
-}
-.menuCloseBtn{
-  position: absolute;
-  left: 20px;
-  top: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-}
-.menuCloseBtn span:nth-last-of-type(1){
-  rotate: 45deg;
-  width: 100%;
-  height: 4px;
-  margin-top: -4px;
-  background-color: #ffffff;
-  display: block;
-}
-.menuCloseBtn span:nth-last-of-type(2){
-  rotate: -45deg;
-  width: 100%;
-  height: 4px;
-  background-color: #ffffff;
-  display: block;
-}
-.sidebarSubmenu{
-  height: 80%;
-  display: flex;
-}
-.sidebarSubmenu ul{
-  position: absolute;
-  top: 100px;
-  display: block;
-  width: 100%;
-}
-.subCategory li:first-of-type{
-  padding: 50px 0px;
-  font-weight: 500;
-}
-.sidebarSubmenu ul li a{
-  color: white;
-  padding: 0px 50px;
-  font-size: 24px;
-}
-ul.subCategory{
-  display: none;
-}
-
-
-
-
-
-
-.sidebarSubmenu ul{
-  position: absolute;
-  top: 100px;
-  display: block;
-  width: 100%;
-}
-.subCategory li:first-of-type{
-  padding: 50px 0px;
-  font-weight: 500;
-}
-.sidebarSubmenu ul li a{
-  color: white;
-  padding: 0px 30px;
-  font-size: 18px;
-}
-ul.subCategory{
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-
-  .mySwiper{
-    display: none;  
-  }
-  section.firstSection{
-    position: relative;
-    max-width: 500px;
-    width: 100%;
-    padding: 0px;
-    overflow: hidden;
-  }
-  section.firstSection .section-title{
-    padding-top: 40px;
-    font-style: normal;
-    letter-spacing: -1px;
-    width: auto;
-    /*font-size: 32px;*/
-    font-size: clamp(32px, 4vw, 50px);
-    font-weight: 600;
-    text-align: left;
-    line-height: 120%;
-    margin-bottom: 10px;
-    padding-left: 20px;
-  }
-  section.firstSection .section-subtitle{
-    text-align: left;
-    width: auto;
-    line-height: 120%;
-    font-size: clamp(16px, 2vw, 18px);
-    padding-left: 20px;
-    font-weight: 500;
-  }
-  section.firstSection .text_box{
-    width: 100%;
-    pointer-events: none;
-  }
-  section.firstSection .parent_box{
-    display: none;
-  }
-  .firstSection .text_box h2.card-title{
-    font-size: clamp(22px, 4vw, 30px);
-    font-weight: 500;
-  }
-  .firstSection .text_box p.card-subtitle{
-    font-size: clamp(14px, 2vw, 18px);
-    width: 100%;
-    padding: 0px 30px;
-    font-weight: 500;
-    left: 0px;
-    top: 70px;
-  }
-  .firstSection .text_box a{
-    display: none;
-  }
-
-  .firstSection_mobile{
-    margin-top: 20px;
-    position: relative;
-    display: block;
-  }
-  .firstSection_mobile .swiper_mobile{
-  }
-  .firstSection_mobile .swiper-wrapper{
-    width: 100%;
-    
-  }
-  .firstSection_mobile .swiper-slide{
-    padding: 0px 20px;
-  }
-  .firstSection_mobile .img_box{
-    width: 100%;
-    min-height: 300px;
-    max-height: 500px;
-    height: 50vw;
-    box-shadow: none;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
-  }
-
-  .swiper{
-
-  }
-
-  section.firstSection .speech_bubble_mobile{
-    position: absolute;
-    top: -90px;
-    right: 20px;
-    z-index: 200;
-    width: 80px;
-    height: auto;
-  }
-  section.firstSection .speech_bubble_mobile .top_box{
-    width: 100%;
-    height: 60px;
-    background-color: green;
-    border-radius: 5px;
-    background-color: #3c3c3c;
-    font-size: 12px;
-    color: white;
-    padding: 15px 10px;
-    line-height: 120%;
-  }
-  section.firstSection .speech_bubble_mobile .triangle_box{
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 15px;
-    height: 15px;
-    rotate: 45deg;
-    background-color: #3c3c3c;
-  }
-  .firstSection_mobile .swiper-pagination{
-  }
-  .firstSection_mobile .swiper-pagination-bullet {
-    background-color: #ffffff;
-    width: 10px;
-    height: 10px;
-  }
-  .firstSection_mobile .swiper-pagination-bullet-active {
-    background-color: #ffffff;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  section.secondSection{
-    max-width: 500px;
-    width: 100%;
-    padding: 0px 20px;
-    overflow: hidden;
-  }
-  section.secondSection .text_box{
-    padding: 0px;
-    width: 100%;
-  }
-  .secondSection .text_box ul {
-    padding-left: 0px;
-  }
-  .secondSection .text_box h2.section-title{
-    padding-top: 40px;
-    width: auto;
-    margin-bottom: 10px;
-    font-size: clamp(32px, 4vw, 50px);
-    font-weight: 600;
-  }
-
-  .secondSection .text_box h3.section-subtitle{
-    width: auto;
-    margin-bottom: 20px;
-    font-size: clamp(16px, 2vw, 18px);
-    font-weight: 500;
-  }
-
-  section.secondSection .parent_box .img_box{
-    display: none;
-  }
-  section.secondSection .parent_box .text_box ul{
-    margin-top: 20px;
-    /* display: none; */
-  }
-  .secondSection .text_box ul li:hover{
-    background-color: #3c3c3c;
-    color: white;
-  }
-  .secondSection .text_box ul{
-    font-size: 16px;
-    min-height: 300px;
-    max-height: 500px;
-  }
-  .secondSection .text_box ul li{
-    font-size: clamp(16px, 2vw, 18px);
-    transition: 0.3s;
-    height: 5vw;
-    min-height: 45px;
-    margin-bottom: 7px;
-    border: solid 1px black;
-    padding: 0px;
-    border-radius: 5px;
-    background-color: #EDEDED;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .secondSection .text_box ul li::before{
-    display: none;
-  }
-
-  .secondSection .parent_box{
-    position: relative;
-  }
-  .secondSection .parent_box .speech_bubble_mobile{
-    position: absolute;
-    top: 90px;
-    right: 0px;
-    z-index: 200;
-    width: 80px;
-    height: auto;
-    display: block;
-  }
-  section.secondSection .speech_bubble_mobile .top_box{
-    width: 100%;
-    height: 60px;
-    background-color: green;
-    border-radius: 5px;
-    background-color: #3c3c3c;
-    font-size: 12px;
-    color: white;
-    padding: 15px 10px;
-    line-height: 120%;
-  }
-  section.secondSection .speech_bubble_mobile .triangle_box{
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 15px;
-    height: 15px;
-    rotate: 45deg;
-    background-color: #3c3c3c;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  section.thirdSection{
-    max-width: 500px;
-    width: 100%;
-    padding: 0px;
-    overflow: hidden;
-  }
-  section.thirdSection img{
-    border-top: solid 1px black;
-    border-right: solid 1px black;
-    border-left: solid 1px black;
-  }
-  section.thirdSection .text_box{
-    padding: 20px 20px 0px 20px;
-    margin: 0px;
-    border: solid 1px black;
-  }
-  .thirdSection h2.section-title{
-    padding-top: 40px;
-    text-align: left;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    font-size: clamp(32px, 4vw, 50px);
-    font-weight: 600;
-  }
-
-  .thirdSection h3.section-subtitle{
-    text-align: left;
-    margin-bottom: 30px;
-    padding-left: 20px;
-    font-size: clamp(16px, 2vw, 18px);
-    font-weight: 500;
-  }
-  .thirdSection .text_box h2.card-title{
-    font-size: clamp(22px, 4vw, 30px);
-  }
-  .thirdSection .text_box p.card-subtitle{
-    font-size: clamp(14px, 2vw, 18px);
-    margin-bottom: 0px;
-  }
-  .thirdSection .card_box{
-    display: none;
-  }
-  .thirdSection_mobile{
-    display: block;
-  }
-  .thirdSection_mobile .swiper_mobile{
-    
-  }
-  .thirdSection .swiper-wrapper{
-    
-  }
-  .thirdSection .swiper-slide{
-    padding: 0px 20px;
-  }
-  .thirdSection_mobile .swiper-pagination{
-  }
-  .thirdSection_mobile .swiper-pagination-bullet {
-    background-color: #000000;
-    width: 10px;
-    height: 10px;
-  }
-  .thirdSection_mobile .swiper-pagination-bullet-active {
-    background-color: #3c3c3c;
-  }
-
-  .thirdSection .deco_{
-    width: 100%;
-    min-height: 300px;
-    max-height: 500px;
-    height: 50vw;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
-  }
-  .thirdSection .text_box a{
-    display: none;
-  }
-  .thirdSection_mobile{
-    position: relative;
-  }
+  header {height:50px; line-height:50px;}  
+  header .logo {margin-left:20px; font-size:18px;}
+  header .menuBtn {margin-right:20px; height:80%; width:50px;}
+  header .mainNav {display:none;}
+  header .mobile_header {display:block;}
+  header .sidebarSubmenu ul li a {color:white; padding:0px 30px; font-size:18px;}
 
+
+
+  .mySwiper {display: none;}
+
+
+
+  .firstSection {position:relative; max-width:500px; width:100%; padding:0px; overflow:hidden;}
+  .firstSection .section-title {padding-top:40px; font-style:normal; letter-spacing:-1px; width:auto; font-size:clamp(32px, 4vw, 50px); font-weight:600; text-align:left; line-height:120%; margin-bottom:10px; padding-left:20px;}
+  .firstSection .section-subtitle {text-align:left; width:auto; line-height:120%; font-size:clamp(16px, 2vw, 18px); padding-left:20px; font-weight:500;}
+  .firstSection .text_box {width: 100%; pointer-events:none;}
+  .firstSection .parent_box {display:none;}
+  .firstSection .text_box .card-title {font-size:clamp(20px, 4vw, 24px); font-weight:500;}
+  .firstSection .text_box p.card-subtitle {font-size:clamp(12px, 2vw, 18px); width:100%; padding:0px 30px; font-weight:500; left:0px; top:70px;}
+  .firstSection .text_box a {display: none;}
+  .firstSection_mobile {display:block;}
+  .firstSection .speech_bubble_mobile {display:block;}
+
+
+
+  section.secondSection {max-width:500px; width:100%; padding:0px 20px; overflow:hidden;}
+  section.secondSection .text_box {padding:0px; width:100%;}
+  .secondSection .text_box ul {padding-left:0px;}
+  .secondSection .text_box h2.section-title {padding-top:40px; width:auto; margin-bottom:10px; font-size:clamp(32px, 4vw, 50px); font-weight:600;}
+  .secondSection .text_box h3.section-subtitle {width:auto; margin-bottom:20px; font-size:clamp(16px, 2vw, 18px); font-weight:500;}
+  section.secondSection .parent_box .img_box {display:none;}
+  section.secondSection .parent_box .text_box ul {margin-top:20px;}
+  .secondSection .text_box ul li:hover {background-color:#3c3c3c; color:white;}
+  .secondSection .text_box ul {font-size:16px; min-height:300px; max-height:400px;}
+  .secondSection .text_box ul li {font-size:clamp(16px, 2vw, 18px); transition:0.3s; height:5vw; min-height:45px; margin-bottom:7px; border:solid 1px black; padding:0px; border-radius:5px; background-color:#EDEDED; box-shadow:0px 10px 10px rgba(0, 0, 0, 0.15); display:flex; align-items:center; justify-content:center;}
+  .secondSection .text_box ul li::before {display:none;}
+  .secondSection .parent_box {position:relative;}
+  .secondSection .speech_bubble_mobile {display:block;}
+
+
+
+  .thirdSection {max-width:500px; width:100%; padding:0px; overflow:hidden;}
+  .thirdSection img {border-top:solid 1px black; border-right:solid 1px black; border-left:solid 1px black;}
+  .thirdSection .text_box {padding:20px 20px 0px 20px; margin:0px; border:solid 1px black;}
+  .thirdSection .section-title {padding-top:40px; text-align:left; margin-bottom:10px; padding-left:20px; font-size:clamp(32px, 4vw, 50px); font-weight:600;}
+  .thirdSection .section-subtitle {text-align:left; margin-bottom:30px; padding-left:20px; font-size:clamp(16px, 2vw, 18px); font-weight:500;}
+  .thirdSection .text_box .card-title {font-size:clamp(20px, 4vw, 24px);}
+  .thirdSection .text_box p.card-subtitle {font-size:clamp(12px, 2vw, 18px); margin-bottom:0px;}
+  .thirdSection .card_box {display:none;}
+  .thirdSection .deco_ {width:100%; min-height:300px; max-height:400px; height:50vw; box-shadow:0px 10px 10px rgba(0, 0, 0, 0.15);}
+  .thirdSection .text_box a {display:none;}
+  .thirdSection_mobile {display:block;}
+  .thirdSection .speech_bubble_mobile {display:block;}
+
+
+
+  .bannerSection {width:100%;}
+  .bannerSection img {width:100%;}
+
+
+
+  .fourthSection {max-width:500px; width:100%; padding:0px; overflow:hidden;}
+  .fourthSection .card  {padding:25px 20px; margin:0px; transition:none;}
+  .fourthSection .card_box {display:none;}
+  .fourthSection .section-title {text-align:left; font-size:clamp(32px, 4vw, 50px); letter-spacing:-1px; margin-bottom:10px; padding-left:20px; font-weight:600;}
+  .fourthSection .section-subtitle {text-align:left; font-size:clamp(16px, 2vw, 18px); margin-bottom:30px; padding-left:20px; font-weight:500;}
+  .fourthSection .card .text_box {position:relative; margin:0px; width:100%; height:200px;}
+  .fourthSection .card .text_box h2.card-title {font-size:clamp(20px, 4vw, 24px);}
+  .fourthSection .card .text_box p.card-subtitle {font-size:clamp(12px, 2vw, 18px);}
+  .fourthSection .card .text_box a {display:none;}
+  .fourthSection .speech_bubble_mobile {position:absolute; top:-90px; right:20px; z-index:200; width:80px; height:auto;}
+  .fourthSection .speech_bubble_mobile .top_box {width:100%; height:60px; background-color:green; border-radius:5px; background-color:#3c3c3c; font-size:12px; color:white; padding:15px 10px; line-height:120%;}
+  .fourthSection .speech_bubble_mobile .triangle_box {position:absolute; top:50px; left:20px; width:15px; height:15px; rotate:45deg; background-color:#3c3c3c;}
+  .fourthSection_mobile {display:block;}
+
+  .line-break::after {content:""; display:block; width:100%; height:0;}
+
+  footer {width:100%; padding:0px 20px;}
+  footer div {width:100%;}
   
-  .thirdSection .speech_bubble_mobile{
-    position: absolute;
-    top: -90px;
-    right: 20px;
-    z-index: 200;
-    width: 80px;
-    height: auto;
-  }
-  .thirdSection .speech_bubble_mobile .top_box{
-    width: 100%;
-    background-color: green;
-    border-radius: 5px;
-    background-color: #3c3c3c;
-    font-size: 12px;
-    color: white;
-    padding: 15px 10px;
-    line-height: 120%;
-  }
-  .thirdSection .speech_bubble_mobile .triangle_box{
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 15px;
-    height: 15px;
-    rotate: 45deg;
-    background-color: #3c3c3c;
-  }
-
-
-  .bannerSection{
-    width: 100%;
-  }
-  .bannerSection img{
-    width: 100%;
-  }
-
-  section.fourthSection{  
-    max-width: 500px;
-    width: 100%;
-    padding: 0px;
-    overflow: hidden;
-  }
-  section.fourthSection .card{
-    padding: 25px 20px;
-    margin: 0px;
-    transition: none;
-  }
-  section.fourthSection .card_box{
-    display: none;
-  }
-  section.fourthSection h2.section-title{
-    text-align: left;
-    font-size: clamp(32px, 4vw, 50px);
-    letter-spacing: -1px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    font-weight: 600;
-  }
-  section.fourthSection h3.section-subtitle{
-    text-align: left;
-    font-size: clamp(16px, 2vw, 18px);
-    margin-bottom: 30px;
-    padding-left: 20px;
-    font-weight: 500;
-  }
-  .fourthSection .card .text_box{
-    position: relative;
-    margin: 0px;
-    width: 100%;
-    height: 200px;
-  }
-  .fourthSection .card .text_box h2.card-title{
-    font-size: clamp(22px, 4vw, 30px);
-  }
-  .fourthSection .card .text_box p.card-subtitle{
-    font-size: clamp(14px, 2vw, 18px);
-  }
-
-
-
-  .fourthSection_mobile{
-    display: block;
-    position: relative;
-  }
-  .fourthSection_mobile .swiper_mobile{
-  }
-  .fourthSection_mobile .swiper-wrapper{}
-  .fourthSection_mobile .swiper-slide{
-    padding: 0px 20px;
-  }
-  .fourthSection_mobile .swiper-pagination{
-  }
-  .fourthSection_mobile .swiper-pagination-bullet {
-    background-color: #000000;
-    width: 10px;
-    height: 10px;
-  }
-  .fourthSection_mobile .swiper-pagination-bullet-active {
-    background-color: #3c3c3c;
-  }
-  .fourthSection_mobile .card{
-    position: relative;
-    min-height: 300px;
-    max-height: 500px;
-    height: 50vw;
-    width: 100%;
-    border: solid 1px black;
-  }
-  .fourthSection .card .text_box a{
-    display: none;
-  }
-  section.fourthSection .speech_bubble_mobile{
-    position: absolute;
-    top: -90px;
-    right: 20px;
-    z-index: 200;
-    width: 80px;
-    height: auto;
-  }
-  section.fourthSection .speech_bubble_mobile .top_box{
-    width: 100%;
-    height: 60px;
-    background-color: green;
-    border-radius: 5px;
-    background-color: #3c3c3c;
-    font-size: 12px;
-    color: white;
-    padding: 15px 10px;
-    line-height: 120%;
-  }
-  section.fourthSection .speech_bubble_mobile .triangle_box{
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    width: 15px;
-    height: 15px;
-    rotate: 45deg;
-    background-color: #3c3c3c;
-  }
-
-
-
-
-  .line-break::after {
-    content: "";
-    display: block;
-    width: 100%; /* 줄바꿈 효과 */
-    height: 0;
-  }
-
-  footer{
-    width: 100%;
-    padding: 0px 20px;
-  }
-  footer div{
-    width: 100%;
-  }
 }
-
-
-@media (max-width:1000px) {
-  footer h2{
-    font-size: 16px;
-  }
-  footer nav a{
-    font-size: 14px;
-  }
-  footer > div{
-    flex-direction: column;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (min-width: 1200px) and (max-width: 1340px) {
 
-  .sidebar{
-    /*pc에서 구성할 사이드바의 값값*/
-    width: 40%;
-    right: -40%;
-  }
-  header .mainNav{
-    width: 46vw;
-  }
-  .firstSection{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 20px;
-  }
-  .firstSection .parent_box{
-    width: 100%;
-    height: 33vw;
-  }
-  .firstSection .img_box{
-    width: 49%;
-  }
-  .firstSection h2.section-title{
-    font-size: 4vw;
-  }
-  .firstSection h3.section-subtitle{
-    font-size: 1.8vw;
-  }
-  .firstSection .text_box h2.card-title{
-    font-size: 2.6vw;
-  }
-  .firstSection .text_box{
-    height: 18vw;
-  }
-  .firstSection .text_box p.card-subtitle{
-    font-size: 1.4vw;
-    width: 40vw;
-  }
+  header .mainNav {width: 46vw;}
+  .sidebar {width:40%; right:-40%;}
 
+  .firstSection {width:100%; height:100vh; padding:0px 20px;}/*겹침*/
+  .firstSection .parent_box {width:100%; height:33vw;}
+  .firstSection .img_box {width:49%;}
+  .firstSection h2.section-title {font-size:4vw;}
+  .firstSection h3.section-subtitle {font-size:1.8vw;}
+  .firstSection .text_box h2.card-title {font-size:2.6vw;}
+  .firstSection .text_box {height:18vw;}
+  .firstSection .text_box p.card-subtitle {font-size:1.4vw; width:40vw;}
+  .firstSection_mobile {display:none;}
+  .firstSection .speech_bubble_mobile {display:none;}
 
+  .secondSection {width:100%; height:100vh; padding:0px 20px;}/*겹침*/
+  .secondSection .parent_box {width:100%; height:39vw;}
+  .secondSection .text_box h2.section-title {font-size:4.5vw; margin-bottom:1.2vw;}
+  .secondSection .text_box h3.section-subtitle {font-size:1.6vw;}
+  .secondSection .text_box ul {font-size:1.4vw; margin-top:4vw;};
+  .secondSection .img_box {gap:1vw; margin-left:1vw;}
+  .secondSection .speech_bubble_mobile {display:none;}
 
+  .thirdSection {width:100%; height:100vh; padding:0px 20px;}/*겹침*/
+  .thirdSection .card_box .deco_ {height:38vw;}
+  .thirdSection h2.section-title {font-size:4.5vw; margin-bottom:1.5vw;}
+  .thirdSection h3.section-subtitle {font-size:1.6vw; margin-bottom:8vw;}
+  .thirdSection .text_box {padding:1.7vw 1.5vw;}
+  .thirdSection .text_box h2.card-title {font-size:1.7vw; margin-bottom:1vw;}
+  .thirdSection .text_box p.card-subtitle {font-size:1.3vw; margin-bottom:4.1vw;}
+  .thirdSection .text_box a {padding:1vw 0px;}
+  .thirdSection_mobile {display:none;}
+  .thirdSection .speech_bubble_mobile {display:none;}
 
-  .firstSection_mobile{
-    display: none;
-  }
+  section.bannerSection {width: 100%;}
 
-
-
-
-
-  section.secondSection{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 20px;
-  }
-  .secondSection .parent_box{
-    width: 100%;
-    height: 39vw;
-  }
-
-
-  .secondSection .img_box{
-  }
-  .secondSection .text_box h2.section-title{
-    font-size: 4.5vw;
-    margin-bottom: 1.2vw;
-  }
-  .secondSection .text_box h3.section-subtitle{
-    font-size: 1.6vw;
-  }
-  .secondSection .text_box ul{
-    font-size: 1.4vw;
-    margin-top: 4vw;
-  };
-  .secondSection .img_box{
-    gap: 1vw;
-    margin-left: 1vw;
-  }
-  .secondSection .speech_bubble_mobile{
-    display: none;
-  }
-
-
-
-
-
-
-  section.thirdSection{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 20px;
-  }
-  .thirdSection .card_box .deco_{
-    height: 38vw;
-  }
-  .thirdSection h2.section-title{
-    font-size: 4.5vw;
-    margin-bottom: 1.5vw;
-  }
-  .thirdSection h3.section-subtitle{
-    font-size: 1.6vw;
-    margin-bottom: 8vw;
-  }
-  .thirdSection .text_box{
-    padding: 1.7vw 1.5vw;
-  }
-  .thirdSection .text_box h2.card-title{
-    font-size: 1.7vw;
-    margin-bottom: 1vw;
-  }
-  .thirdSection .text_box p.card-subtitle{
-    font-size: 1.3vw;
-    margin-bottom: 4.1vw;
-  }
-  .thirdSection .text_box a{
-    padding: 1vw 0px;
-  }
-
-
-
-
-
-  .thirdSection_mobile{
-    display: none;
-  }
-
-
-
-
-
-
-
-
-
-  section.fourthSection{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 20px;
-  }
-  section.fourthSection h2.section-title{
-    font-size: 4.5vw;
-    margin-bottom: 1.3vw;
-    color: #333;
-  }
-  section.fourthSection h3.section-subtitle{
-    font-size: 1.6vw;
-  }
-  section.fourthSection .card_box{
-    margin-top: 2vw;
-  }
-  .fourthSection .card_box .card{
-    padding: 2vw 0px 0px 2vw;
-    height: 23vw;
-    width: 30vw;
-  }
-
-
-
-  .fourthSection .card_box .card .img_box{
-    width: 2.5vw;
-    margin-bottom: 1.2vw;
-  }
-  .fourthSection .card_box .card .text_box{
-    position: relative;
-    margin-bottom: 1vw;
-    width: 25vw;
-    height: 230px;
-  }
-  .fourthSection .card_box .card .text_box h2.card-title{
-    font-size: 1.5vw;
-    margin-bottom: 1.2vw;
-  }
-  .fourthSection .card_box .card .text_box p.card-subtitle{
-    font-size: 1.2vw;
-  }
-  .fourthSection .card_box .card .text_box a{
-    top: 13vw;
-  }
-
-
-
-
-  section.bannerSection{
-    position: relative;
-    width: 100%;
-    height: 29vw;
-    margin: 0 auto;
-    text-align: center;
-    overflow: hidden;
-  }
-  section.bannerSection img{
-    height: 100%;   
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-
-
-
-
-
-
-
-
-  /* footer start*/
-  footer > div{
-    width: 100%;
-    padding: 50px;
-  }
-  /* footer end */
-
+  .fourthSection {width:100%; height:100vh; padding:0px 20px;}/*겹침*/
+  .fourthSection h2.section-title {font-size:4.5vw; margin-bottom:1.3vw; color:#333;}
+  .fourthSection h3.section-subtitle {font-size:1.6vw;}
+  .fourthSection .card_box {margin-top:2vw;}
+  .fourthSection .card_box .card {padding:2vw 0px 0px 2vw; height:23vw; width:30vw;}
+  .fourthSection .card_box .card .img_box {width:2.5vw; margin-bottom:1.2vw;}
+  .fourthSection .card_box .card .text_box {position:relative; margin-bottom:1vw; width:25vw; height:230px;}
+  .fourthSection .card_box .card .text_box h2.card-title {font-size:1.5vw; margin-bottom:1.2vw;}
+  .fourthSection .card_box .card .text_box p.card-subtitle {font-size:1.2vw;}
+  .fourthSection .card_box .card .text_box a {top:13vw;}
+  .fourthSection_mobile {display:none;}
+  .fourthSection .speech_bubble_mobile {display:none;}
 }
-@media (min-width: 1200px) {
-  
-}
-
-
-
-@media (min-width: 1001px) and (max-width: 1400px) {
-} 
-
-
-
-
-
-
-
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-
-
-
-
-
-
-
-
-
-
-/* 0px에서 1000px까지 스타일 구성성 */

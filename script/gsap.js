@@ -1,24 +1,20 @@
-// ----------첫 번째 섹션 start----------
+// GSAP ScrollTrigger 활성화 
 gsap.registerPlugin(ScrollTrigger);
+// GSAP matchMedia 활성화
 let mm = gsap.matchMedia();
 
-// ----------gsap mediaquery 768px----------
+// <----------GSAP mediaquery (~ 768px)---------->
 mm.add("(max-width: 1199px)",() => {
+  // 첫 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".firstSection .section-title, .firstSection .section-subtitle", 
     { opacity: 0, x: -100 }, 
     { 
       opacity: 1, 
       x: 0, 
-      duration: 1, 
-      scrollTrigger: {
-        trigger: 
-          ".firstSection .section-title, .firstSection .section-subtitle", 
-        start: "top 70%",
-        end: "top 60%", 
-        scrub: 1,
-        markers: false,
-      }
+      duration: 0.5, 
+      ease: "power2.out",
+      markers: false,
     }
   );
   gsap.fromTo(
@@ -27,14 +23,9 @@ mm.add("(max-width: 1199px)",() => {
     { 
       opacity: 1, 
       x: 0, 
-      duration: 1, 
-      scrollTrigger: {
-        trigger: ".speech_bubble_mobile", 
-        start: "top 70%",
-        end: "top 60%", 
-        scrub: 1,
-        markers: false,
-      }
+      duration: 0.4, 
+      ease: "power2.out",
+      markers: false,
     }
   );
   gsap.fromTo(
@@ -43,27 +34,13 @@ mm.add("(max-width: 1199px)",() => {
     { 
       opacity: 1, 
       y: 0, 
-      duration: 1, 
-      scrollTrigger: {
-        trigger: ".firstSection_mobile .swiper_mobile", 
-        start: "top 90%",
-        end: "top 80%", 
-        scrub: 1,
-        markers: false,
-      }
+      duration: 0.4, 
+      ease: "power2.out",
+      markers: false,
     }
   );
 
-
-
-
-
-
-
-
-
-
-
+  // 두 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".secondSection .section-title, .secondSection .section-subtitle", 
     { opacity: 0, x: -300 }, 
@@ -114,15 +91,7 @@ mm.add("(max-width: 1199px)",() => {
     }
   );
 
-
-
-
-
-
-
-
-
-
+  // 세 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".thirdSection .section-title, .thirdSection .section-subtitle", 
     { opacity: 0, x: -300 }, 
@@ -173,13 +142,7 @@ mm.add("(max-width: 1199px)",() => {
     }
   );
 
-
-
-
-
-
-
-
+  // 네 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".fourthSection .section-title, .fourthSection .section-subtitle", 
     { opacity: 0, x: -300 }, 
@@ -228,26 +191,14 @@ mm.add("(max-width: 1199px)",() => {
       }
     }
   );
-
-
-
-
-
-
-// speech_bubble_mobile
 });
+// </----------GSAP mediaquery (~ 768px)---------->
 
 
 
-
-
-
-
-
-
-
-
+// <----------GSAP mediaquery (1200px ~ )---------->
 mm.add("(min-width: 1200px)",() => {
+  // 첫 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".firstSection .section-title, .firstSection .section-subtitle, .firstSection .card-title, .firstSection .card-subtitle", 
     { opacity: 0, y: 100 }, 
@@ -297,12 +248,7 @@ mm.add("(min-width: 1200px)",() => {
     }
   );
 
-
-
-
-
-
-
+  // 두 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".secondSection .text_box", 
     { opacity: 0, x: 100 }, 
@@ -336,13 +282,7 @@ mm.add("(min-width: 1200px)",() => {
     }
   );
 
-
-
-
-
-
-
-
+  // 세 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".thirdSection .section-title, .thirdSection .section-subtitle", 
     { opacity: 0, y: 100 }, 
@@ -408,22 +348,7 @@ mm.add("(min-width: 1200px)",() => {
     }
   );
 
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
+  // 네 번째 섹션 GSAP 동작
   gsap.fromTo(
     "section.fourthSection h2.section-title, section.fourthSection h3.section-subtitle", 
     { opacity: 0, y: 100 }, 
@@ -464,7 +389,7 @@ mm.add("(min-width: 1200px)",() => {
     opacity: 1
   });
 })
-
+// </----------GSAP mediaquery (1200px ~ )---------->
 
 
 
