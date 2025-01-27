@@ -13,7 +13,7 @@
 
 
 
-  .firstSection {position:relative; max-width:500px; width:100%; padding:0px; overflow:hidden;}
+  .firstSection {position:relative; max-width:500px; width:100%; padding:0px; overflow:hidden; padding-top: 50px;}
   .firstSection .section-title {padding-top:40px; font-style:normal; letter-spacing:-1px; width:auto; font-size:clamp(32px, 4vw, 50px); font-weight:600; text-align:left; line-height:120%; margin-bottom:10px; padding-left:20px;}
   .firstSection .section-subtitle {text-align:left; width:auto; line-height:120%; font-size:clamp(16px, 2vw, 18px); padding-left:20px; font-weight:500;}
   .firstSection .text_box {width: 100%; pointer-events:none;}
@@ -26,7 +26,7 @@
 
 
 
-  section.secondSection {max-width:500px; width:100%; padding:0px 20px; overflow:hidden;}
+  section.secondSection {max-width:500px; width:100%; padding:0px 20px; overflow:hidden; padding-top: 50px;}
   section.secondSection .text_box {padding:0px; width:100%;}
   .secondSection .text_box ul {padding-left:0px;}
   .secondSection .text_box h2.section-title {padding-top:40px; width:auto; margin-bottom:10px; font-size:clamp(32px, 4vw, 50px); font-weight:600;}
@@ -42,7 +42,7 @@
 
 
 
-  .thirdSection {max-width:500px; width:100%; padding:0px; overflow:hidden;}
+  .thirdSection {max-width:500px; width:100%; padding:0px; overflow:hidden; padding-top: 50px;}
   .thirdSection img {border-top:solid 1px black; border-right:solid 1px black; border-left:solid 1px black;}
   .thirdSection .text_box {padding:20px 20px 0px 20px; margin:0px; border:solid 1px black;}
   .thirdSection .section-title {padding-top:40px; text-align:left; margin-bottom:10px; padding-left:20px; font-size:clamp(32px, 4vw, 50px); font-weight:600;}
@@ -62,7 +62,7 @@
 
 
 
-  .fourthSection {max-width:500px; width:100%; padding:0px; overflow:hidden;}
+  .fourthSection {max-width:500px; width:100%; padding:0px; overflow:hidden; padding-top: 50px;}
   .fourthSection .card  {padding:25px 20px; margin:0px; transition:none;}
   .fourthSection .card_box {display:none;}
   .fourthSection .section-title {text-align:left; font-size:clamp(32px, 4vw, 50px); letter-spacing:-1px; margin-bottom:10px; padding-left:20px; font-weight:600;}
